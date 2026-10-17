@@ -13,7 +13,7 @@ The trick is that the model is a 35B MoE, but only about 3B parameters are activ
 ## What you need
 
 - Linux with a working ROCm PyTorch install (`torch.version.hip` set, GPU visible)
-- An AMD GPU with about 12 GB of free VRAM or more
+- An AMD GPU. I tested with 16 GB; if your card is too small, the app tells you before it loads the big weights
 - Lots of RAM. The process uses around 35 GB, so 64 GB is probably the minimum. I have 128 GB.
 - About 42 GB of disk for the model
 - Node.js + npm for building the UI
@@ -83,7 +83,7 @@ Honestly, not realtime. On my RX 9070 + Ryzen 9 5900XT + 128 GB DDR4:
 | VRAM peak | ~11–12 GB |
 | Process RAM | ~35 GB |
 
-Most of the time goes into moving experts over PCIe. A GPU with more VRAM can keep more experts cached, which makes it faster.
+A lot of the time probably goes into moving experts over PCIe, so a card with more VRAM (bigger expert cache) should be faster. I haven't measured that though.
 
 ## How it works
 

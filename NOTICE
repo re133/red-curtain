@@ -21,6 +21,9 @@ Which files:
   red_curtain/sampling.py         from fish_speech (sampling defaults)
   tests/fixtures/drama-3*.json    config.json of fishaudio/drama-3 and
                                   fishaudio/drama-3-int4, used as test input
+  tests/fixtures/codec-tensor-metadata.json
+                                  tensor names and shapes read from the
+                                  Drama 3 codec.pth (no weights), test input
 
 Source: https://github.com/fishaudio/fish-speech
 Revision: 541566932abbaebcb0a40e562a1f846738383f38

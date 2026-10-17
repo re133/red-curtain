@@ -29,6 +29,7 @@ cover the following parts, which keep their original licenses:
   red_curtain/errors.py          (see red_curtain/fish_omni/LICENSE)
   red_curtain/sampling.py
   tests/fixtures/drama-3*.json
+  tests/fixtures/codec-tensor-metadata.json
 
   red_curtain/codec/             Apache-2.0 (vLLM-Omni), with parts under MIT
                                  (Descript), see red_curtain/codec/LICENSE
