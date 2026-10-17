@@ -6,6 +6,10 @@ Officially Drama 3 needs an NVIDIA card with at least 48 GB of VRAM. ROCm isn't 
 
 The trick is that the model is a 35B MoE, but only about 3B parameters are active per token. So the experts (around 32 GB) stay in system RAM, and only the ones that are needed get moved to the GPU. Everything else fits in VRAM.
 
+Here's what it sounds like (sound on), generated on the RX 9070 with the default settings:
+
+https://github.com/user-attachments/assets/82e8f553-65aa-48cf-87d5-8a30a9dd00f2
+
 ![screenshot](docs/screenshot.jpg)
 
 **Built with Fish Audio.** This is a community project and has nothing to do with Fish Audio officially.
