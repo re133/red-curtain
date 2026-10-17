@@ -59,7 +59,7 @@ def main():
                                                            torch.randn(32,16,16,device='cuda'),stride=8))
         monitor.check()
     monitor.check()
-    report['monitor'] = monitor.samples
+    report['monitor'] = list(monitor.samples)
     report['peak_allocated_bytes'] = torch.cuda.max_memory_allocated()
     Path('reports').mkdir(exist_ok=True)
     Path('reports/gpu-probe.json').write_text(json.dumps(report,indent=2)+'\n')

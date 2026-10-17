@@ -17,8 +17,9 @@ from tokenizers import Tokenizer
 from red_curtain.audio import load_codec, write_wav, read_reference
 from red_curtain.fish_omni.backbone import FishOmniBackbone, load_backbone_weights, module_bytes
 from red_curtain.fish_omni.config import FishOmniConfig
-from red_curtain.fish_omni.generate import build_drama3_prompt, generate_drama3, Drama3PromptTooLongError
-from red_curtain.fish_omni.chunking import Drama3History, split_drama3_text
+from red_curtain.fish_omni.generate import (build_drama3_prompt, generate_drama3, Drama3PromptTooLongError,
+    SPEAKER_TAG_PATTERN)
+from red_curtain.fish_omni.chunking import Drama3History, parse_speaker_segments, split_drama3_text
 from red_curtain.fish_omni.model import FishOmniModel, iter_checkpoint_tensors, AUDIO_DECODER_PREFIXES
 from red_curtain.fish_omni.tower import FishOmniAudioDecoder, load_audio_decoder_weights
 from red_curtain.memory import ExpertCache, OffloadedExperts
@@ -27,6 +28,21 @@ from red_curtain.budget import resolve_budget
 from red_curtain.gpu import device_memory
 
 GIB = 1024 ** 3
+# top_k=0 turns top-k off; any value above the candidate count does that.
+NO_TOP_K = 1 << 16
+
+
+def tidy_script(text):
+    """Speaker turns without stray white space, so the split gives "<|speaker:N|> text" lines."""
+    if SPEAKER_TAG_PATTERN.search(text) is None:
+        return text.strip()
+    return "".join(f"<|speaker:{speaker}|>{' '.join(body.split())}" for speaker, body in parse_speaker_segments(text))
+
+
+def frame_budget(part):
+    """Frame limit for a part when none is set: about 2.5x a slow reading of the text.
+    Takes that go silent then stop near the expected length instead of running to 1024."""
+    return min(1024, 64 + 4 * len(SPEAKER_TAG_PATTERN.sub("", part).strip()))
 
 
 def build_part_prompt(model, text, prompt_texts, prompt_tokens, history):
@@ -154,11 +170,13 @@ class DramaAdapter:
             raise
 
     @torch.inference_mode()
-    def generate(self, text, output, max_new_tokens=256, temperature=1.0, top_p=0.9, top_k=30, seed=42,
-                 references=()):
+    def generate(self, text, output, max_new_tokens=None, temperature=1.0, top_p=0.9, top_k=0, seed=42,
+                 references=(), part_size=300, context=True):
+        """max_new_tokens=None picks a limit per part from its length, top_k=0 turns top-k off."""
         if self.state != "ready":
             raise RuntimeError(f"Model is not ready: {self.state}")
-        if not (1 <= max_new_tokens <= 1024 and 0 < temperature <= 2 and 0 < top_p <= 1 and 1 <= top_k <= 4096):
+        if not ((max_new_tokens is None or 1 <= max_new_tokens <= 1024) and 0 < temperature <= 2
+                and 0 < top_p <= 1 and 0 <= top_k <= 4096 and 100 <= part_size <= 300):
             raise ValueError("Invalid sampling settings")
         self.state = "generating"
         started = time.perf_counter()
@@ -199,12 +217,12 @@ class DramaAdapter:
             self.residency.resume()
             # Same text preparation as fish-speech: one line per speaker segment and
             # parts of about 300 bytes, each generated with the first and latest part as context.
-            parts = split_drama3_text(text) or [text]
+            parts = split_drama3_text(tidy_script(text), max_bytes=part_size) or [text]
             for part in parts:
                 build_drama3_prompt(part, self.model.tokenizer, self.model.config,
                                     prompt_texts=reference_texts, prompt_tokens=reference_tokens)
             history = Drama3History()
-            part_codes, reasons = [], []
+            part_codes, reasons, limits = [], [], []
             # This adapter uses Python CPU routing and dynamic transfers: graph capture is incompatible.
             prior = os.environ.get("FISH_DRAMA3_CUDA_GRAPH")
             os.environ["FISH_DRAMA3_CUDA_GRAPH"] = "0"
@@ -212,9 +230,10 @@ class DramaAdapter:
                 for index, part in enumerate(parts, 1):
                     prefix = f"Part {index}/{len(parts)}: " if len(parts) > 1 else ""
                     prompt = build_part_prompt(self.model, part, reference_texts, reference_tokens, history)
+                    limits.append(max_new_tokens or frame_budget(part))
                     frames, reason = generate_drama3(self.model, prompt,
-                        max_new_tokens=max_new_tokens, temperature=temperature, top_p=top_p,
-                        top_k=top_k, prefill_chunk_size=32, check=self.check,
+                        max_new_tokens=limits[-1], temperature=temperature, top_p=top_p,
+                        top_k=top_k or NO_TOP_K, prefill_chunk_size=32, check=self.check,
                         progress=lambda stage, message: report_progress(stage, prefix + message))
                     reasons.append(reason)
                     if frames.numel() == 0:
@@ -222,7 +241,8 @@ class DramaAdapter:
                     codes = frames[:,1:].T.contiguous()
                     if codes.shape[0] != 10 or (codes < 0).any() or (codes[0] >= 4096).any() or (codes[1:] >= 1024).any():
                         raise RuntimeError("Drama 3 generated invalid DAC codebook indices")
-                    history.push(part, codes)
+                    if context:
+                        history.push(part, codes)
                     part_codes.append(codes)
             finally:
                 if prior is None:
@@ -264,6 +284,7 @@ class DramaAdapter:
             self.check()
             info = write_wav(output, samples, self.codec.sample_rate)
             self.metrics.update(info, finish_reason=reason, frames=codes.shape[1], parts=len(parts),
+                frame_limit=max(limits),
                 decode_offload_bytes=offload_bytes, decode_offload_seconds=offload_seconds,
                 gpu_allocated_before_dac_bytes=dac_start_bytes,
                 semantic_seconds=semantic_seconds, generation_seconds=time.perf_counter()-started,

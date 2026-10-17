@@ -1,4 +1,5 @@
 """API lifecycle tests inject an explicit fake; they never claim model validation."""
+import json
 import threading
 from pathlib import Path
 
@@ -193,3 +194,13 @@ def test_old_history_gets_silence_warning_without_modifying_original_metadata(tm
         assert result['metrics']['audio_warning']
         assert result['metrics']['trailing_silence_s']>=7.9
         assert metadata.read_text()==original
+
+
+def test_history_leaves_out_monitor_samples(tmp_path):
+    m=manager(tmp_path)
+    take='a'*32
+    (tmp_path/'outputs').mkdir()
+    (tmp_path/'outputs'/f'{take}.json').write_text(json.dumps(dict(id=take,text='Hi',created=1.0,status='failed',
+        monitor=[{'time':1.0}]*1000)))
+    assert [r['id'] for r in m.history()]==[take]
+    assert 'monitor' not in m.history()[0]

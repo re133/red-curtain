@@ -55,8 +55,10 @@ Multiple speakers and emotions work the same way as in the original:
 
 ```text
 <|speaker:0|> Did you hear that?
-<|speaker:1|> [sighs] It's just the GPU fans again.
+<|speaker:1|> Relax. [sighing] It's just the GPU fans again.
 ```
+
+The tags button under the text field has the same tags Fish Audio's own editor offers. Don't put a sound tag right at the start of a line, the model then often says the first word and goes silent. After the first few words it works fine.
 
 You can also add reference voices (WAV or FLAC, up to 15 seconds, with an exact transcript) and assign them to speaker 0 or 1. **Only use recordings of people who agreed to it.** The Fish license is very clear about that, see below.
 
@@ -99,7 +101,12 @@ The model code itself is Fish Audio's code from [fish-speech](https://github.com
 ## Known issues
 
 - Long text gets split into parts of about 300 characters, the same way fish-speech does it. Each part can be at most about 47 seconds (1024 frames).
-- Sometimes a take just stops after the first sentence, or runs into silence. That's the model itself, not the AMD port: I compared it step by step against Fish's own reference code running on the CPU and the probabilities match. Preparing the text like fish-speech does (one line per speaker, long text in parts) plus temperature 1.0 / top-p 0.9 made it a lot better: in my test 9 of 12 short takes came out complete, before it was 2 of 12. If it still happens, try another seed; the UI warns you when it detects a long silent tail.
+- Sometimes a take just stops after the first sentence and the rest is silence. That's a known thing with Drama 3 (the vLLM recipe and other ports mention it too, and Fish regenerates silent takes themselves), not the AMD port: I compared it step by step against Fish's own reference code running on the CPU and the probabilities match. What helps, all already set as default:
+  - top-k off. With top-k 30 (the fish-speech default) it happened in most of my dialogue takes, with top-k off all 4 I tried came out complete. Small sample, but a clear difference.
+  - temperature 1.0 / top-p 0.9 and the text prepared like fish-speech does it.
+  - a frame limit that follows the text length, so a broken take stops early instead of rendering 40 s of silence.
+
+  Two things you can do yourself: give every speaker a reference voice (with one, 8 of 8 test takes came out complete), and don't start a line with a sound tag. If it still happens, try another seed; the UI warns you when it detects a long silent tail.
 - `MIOPEN_FIND_MODE=FAST` is set by `start.sh`. Without it, MIOpen searches kernels for ages every time the audio length changes.
 - Only one job runs at a time
 

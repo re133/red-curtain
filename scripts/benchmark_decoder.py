@@ -40,7 +40,7 @@ with Monitor() as monitor,torch.inference_mode():
         report['runs'].append(result)
         if not torch.isfinite(waveform).all():raise ValueError('Non-finite codec output')
     monitor.check()
-report['monitor']=monitor.samples
+report['monitor']=list(monitor.samples)
 Path('reports').mkdir(exist_ok=True)
 (args.report or Path(f'reports/decoder-{args.find_mode.lower()}.json')).write_text(json.dumps(report,indent=2)+'\n')
 print(json.dumps(report['runs'],indent=2))

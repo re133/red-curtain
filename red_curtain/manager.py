@@ -36,6 +36,7 @@ class ModelManager:
         self.resources_time=0
         self.unload_metrics={}
         self.activity_cache={}
+        self.record_cache={}
         self.factory, self.monitor_factory = adapter_factory, monitor_factory
         self.executor = ThreadPoolExecutor(max_workers=1,thread_name_prefix='drama-inference')
         self.lock = threading.RLock()
@@ -197,7 +198,7 @@ class ModelManager:
         finally:
             record['codes_available']=output.with_suffix('.codes.npy').is_file()
             if self.monitor:
-                record['monitor']=list(self.monitor.samples)
+                record['monitor']=[s for s in self.monitor.samples if s['time']>=record['created']]
             try:
                 metadata=output.with_suffix('.json')
                 temp=metadata.with_suffix('.partial.json')
@@ -249,7 +250,13 @@ class ModelManager:
                 if len(path.stem)!=32:
                     continue
                 try:
-                    record=json.loads(path.read_text())
+                    # Parsed once per file version; the monitor samples are not sent to the UI.
+                    key=(path,path.stat().st_mtime_ns)
+                    if key not in self.record_cache:
+                        record=json.loads(path.read_text())
+                        record.pop('monitor',None)
+                        self.record_cache[key]=record
+                    record=self.record_cache[key]
                     if record['id']==path.stem:
                         wave=path.with_suffix('.wav')
                         if record.get('status')=='audio_generated_unreviewed' and wave.is_file():
@@ -266,7 +273,7 @@ class ModelManager:
                                         logger.warning('Could not inspect audio activity: %s',wave)
                                 metrics.update(self.activity_cache.get(key,{}))
                         records.append(record)
-                except (ValueError,KeyError):
+                except (ValueError,KeyError,OSError):
                     logger.warning('Invalid generation metadata: %s',path)
         return sorted(records,key=lambda r:r['created'],reverse=True)
 

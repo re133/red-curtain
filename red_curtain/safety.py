@@ -1,4 +1,5 @@
 """Read-only ROCm health monitoring. Never writes hardware controls."""
+from collections import deque
 import threading
 import time
 import psutil
@@ -44,7 +45,8 @@ def check_snapshot(snapshot):
 class Monitor:
     def __init__(self, interval=2):
         self.interval = interval
-        self.samples = []
+        # The monitor runs as long as the model is loaded; keep the last 30 minutes.
+        self.samples = deque(maxlen=900)
         self.error = None
         self.stop_event = threading.Event()
         self.thread = None

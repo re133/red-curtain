@@ -42,7 +42,7 @@ def main():
         if adapter:adapter.unload()
         report['gpu_allocated_after_unload_bytes']=torch.cuda.memory_allocated()
         report['gpu_reserved_after_unload_bytes']=torch.cuda.memory_reserved()
-        report['monitor']=monitor.samples
+        report['monitor']=list(monitor.samples)
         report['peak_process_rss_bytes']=max((s['process_rss_bytes'] for s in monitor.samples),default=0)
         Path('reports').mkdir(exist_ok=True)
         Path(f'reports/{args.name}.json').write_text(json.dumps(report,indent=2)+'\n')

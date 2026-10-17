@@ -14,11 +14,13 @@ def main():
     parser.add_argument('--text', required=True)
     parser.add_argument('--output', type=Path, required=True)
     parser.add_argument('--vram-limit-gib', type=float, default=None,help='Optional upper limit; default: automatic GPU memory budget')
-    parser.add_argument('--max-new-tokens', type=int, default=256)
+    parser.add_argument('--max-new-tokens', type=int, default=None, help='Frame limit per part; default: from the text length')
     parser.add_argument('--temperature', type=float, default=1.0)
     parser.add_argument('--top-p', type=float, default=0.9)
-    parser.add_argument('--top-k', type=int, default=30)
+    parser.add_argument('--top-k', type=int, default=0, help='0 turns top-k off')
     parser.add_argument('--seed', type=int, default=42)
+    parser.add_argument('--part-size', type=int, default=300, help='Bytes per text part, 100-300')
+    parser.add_argument('--no-context', action='store_true', help='Do not give earlier parts to the next one')
     parser.add_argument('--reference-audio',type=Path,action='append',default=[])
     parser.add_argument('--reference-text',action='append',default=[])
     parser.add_argument('--reference-speaker',type=int,action='append',default=[])
@@ -42,7 +44,8 @@ def main():
             adapter.load(args.model)
             report.update(adapter.generate(args.text,args.output,
                 max_new_tokens=args.max_new_tokens,temperature=args.temperature,
-                top_p=args.top_p,top_k=args.top_k,seed=args.seed,references=references))
+                top_p=args.top_p,top_k=args.top_k,seed=args.seed,references=references,
+                part_size=args.part_size,context=not args.no_context))
             report['status'] = 'audio_generated_unreviewed'
     except (Exception, KeyboardInterrupt) as exc:
         report['error'] = f"{type(exc).__name__}: {exc}"
@@ -52,7 +55,7 @@ def main():
             adapter.unload()
             import torch
             report['gpu_allocated_after_unload_bytes'] = torch.cuda.memory_allocated() if torch.cuda.is_available() else 0
-        report['monitor'] = monitor.samples
+        report['monitor'] = list(monitor.samples)
         if monitor.error:
             report.update(status='failed', error=monitor.error)
         if report['status'] == 'failed':

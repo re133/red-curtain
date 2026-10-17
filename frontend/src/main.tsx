@@ -9,6 +9,54 @@ import {
 import { createRoot } from "react-dom/client";
 import "./style.css";
 
+// The tags Fish Audio's own editor offers for Drama 3.
+// Sampling defaults that went silent least often in our tests: top-k off as in
+// Fish Audio's own demo, and a frame limit that follows the text length.
+const DEFAULTS = {
+  temperature: 1.0,
+  topP: 0.9,
+  topK: 0,
+  autoLength: true,
+  maxTokens: 512,
+  partSize: 300,
+  context: true,
+};
+const WORD_TAGS = [
+  "whisper",
+  "emphasis",
+  "soft",
+  "fast",
+  "slow",
+  "stress",
+  "forceful",
+];
+const TONE_TAGS = [
+  "angry",
+  "sad",
+  "embarrassed",
+  "emphasis",
+  "whispering",
+  "soft",
+  "breathy",
+  "excited",
+];
+const SOUND_TAGS = [
+  "laughing",
+  "chuckling",
+  "moaning",
+  "clear throat",
+  "sobbing",
+  "crying loudly",
+  "sighing",
+  "panting",
+  "groaning",
+  "crowd laughing",
+  "background laughter",
+  "audience laughing",
+  "pause",
+  "long pause",
+];
+
 type Metrics = Record<string, number | string>;
 type Status = {
   state: string;
@@ -231,11 +279,16 @@ function App() {
     [pending, setPending] = useState(false),
     [error, setError] = useState("");
   const [selected, setSelected] = useState(""),
-    [maxTokens, setMaxTokens] = useState(256),
-    [temperature, setTemperature] = useState(1.0),
-    [topP, setTopP] = useState(0.9),
+    [autoLength, setAutoLength] = useState(DEFAULTS.autoLength),
+    [maxTokens, setMaxTokens] = useState(DEFAULTS.maxTokens),
+    [temperature, setTemperature] = useState(DEFAULTS.temperature),
+    [topP, setTopP] = useState(DEFAULTS.topP),
+    [topK, setTopK] = useState(DEFAULTS.topK),
+    [partSize, setPartSize] = useState(DEFAULTS.partSize),
+    [context, setContext] = useState(DEFAULTS.context),
     [seed, setSeed] = useState(42);
-  const [fixedSeed, setFixedSeed] = useState(false);
+  const [fixedSeed, setFixedSeed] = useState(false),
+    [tagsOpen, setTagsOpen] = useState(false);
   const [assignments, setAssignments] = useState<Record<number, string>>({
     0: "",
     1: "",
@@ -305,16 +358,46 @@ function App() {
       setPending(false);
     }
   }
-  function insert(marker: string) {
+  function edit(
+    make: (before: string, selection: string, after: string) => string[],
+  ) {
     const element = textarea.current,
       start = element?.selectionStart ?? text.length,
-      end = element?.selectionEnd ?? start;
-    setText(text.slice(0, start) + marker + text.slice(end));
+      end = element?.selectionEnd ?? start,
+      [head, tail] = make(
+        text.slice(0, start),
+        text.slice(start, end),
+        text.slice(end),
+      );
+    setText(head + tail);
     requestAnimationFrame(() => {
       element?.focus();
-      element?.setSelectionRange(start + marker.length, start + marker.length);
+      element?.setSelectionRange(head.length, head.length);
     });
   }
+  // Speaker tags start a new line, point tags get a space on each side;
+  // both go in front of a selection instead of replacing it.
+  const speaker = (n: number) =>
+    edit((before, selection, after) => [
+      before +
+        (before && !before.endsWith("\n") ? "\n" : "") +
+        `<|speaker:${n}|> `,
+      selection + after,
+    ]);
+  const point = (tag: string) =>
+    edit((before, selection, after) => [
+      before +
+        (before && !/\s$/.test(before) ? " " : "") +
+        tag +
+        (/^\s/.test(selection + after) ? "" : " "),
+      selection + after,
+    ]);
+  const wrap = (tag: string) =>
+    edit((before, selection, after) =>
+      selection
+        ? [before + `<${tag}>${selection}</${tag}>`, after]
+        : [before + `<${tag}>`, `</${tag}>` + after],
+    );
   const gpu = Object.values(status.resources?.gpu || {})[0] || {};
   const gpuName =
     status.hardware?.name || gpu["Card Series"] || "No ROCm GPU found";
@@ -351,12 +434,24 @@ function App() {
     downloading: "Downloading",
     error: "Error",
   };
+  function resetSampling() {
+    setTemperature(DEFAULTS.temperature);
+    setTopP(DEFAULTS.topP);
+    setTopK(DEFAULTS.topK);
+    setAutoLength(DEFAULTS.autoLength);
+    setMaxTokens(DEFAULTS.maxTokens);
+    setPartSize(DEFAULTS.partSize);
+    setContext(DEFAULTS.context);
+  }
   async function generate() {
     await api("/generate", "POST", {
       text,
-      max_new_tokens: maxTokens,
+      max_new_tokens: autoLength ? null : maxTokens,
       temperature,
       top_p: topP,
+      top_k: topK,
+      part_size: partSize,
+      context,
       seed: fixedSeed ? seed : crypto.getRandomValues(new Uint32Array(1))[0],
       voices: Object.entries(assignments)
         .filter(([, id]) => id)
@@ -510,16 +605,15 @@ function App() {
                 />
                 <div className="script-foot">
                   <div className="tags" aria-label="Insert tag">
-                    <button onClick={() => insert("<|speaker:0|> ")}>
-                      speaker 0
+                    <button onClick={() => speaker(0)}>speaker 0</button>
+                    <button onClick={() => speaker(1)}>speaker 1</button>
+                    <button
+                      className={tagsOpen ? "open" : ""}
+                      aria-expanded={tagsOpen}
+                      onClick={() => setTagsOpen(!tagsOpen)}
+                    >
+                      tags {tagsOpen ? "▴" : "▾"}
                     </button>
-                    <button onClick={() => insert("<|speaker:1|> ")}>
-                      speaker 1
-                    </button>
-                    <button onClick={() => insert("[laughs] ")}>
-                      [laughs]
-                    </button>
-                    <button onClick={() => insert("[sighs] ")}>[sighs]</button>
                   </div>
                   {busy ? (
                     <button
@@ -541,6 +635,46 @@ function App() {
                     </button>
                   )}
                 </div>
+                {tagsOpen && (
+                  <div className="tag-panel">
+                    <div className="tag-group">
+                      <span>Words</span>
+                      <div className="tags">
+                        {WORD_TAGS.map((tag) => (
+                          <button key={tag} onClick={() => wrap(tag)}>
+                            {tag}
+                          </button>
+                        ))}
+                      </div>
+                    </div>
+                    <div className="tag-group">
+                      <span>Tone</span>
+                      <div className="tags">
+                        {TONE_TAGS.map((tag) => (
+                          <button key={tag} onClick={() => point(`[${tag}]`)}>
+                            [{tag}]
+                          </button>
+                        ))}
+                      </div>
+                    </div>
+                    <div className="tag-group">
+                      <span>Sounds</span>
+                      <div className="tags">
+                        {SOUND_TAGS.map((tag) => (
+                          <button key={tag} onClick={() => point(`[${tag}]`)}>
+                            [{tag}]
+                          </button>
+                        ))}
+                      </div>
+                    </div>
+                    <p className="hint">
+                      Word tags wrap the selected words. Put sounds after the
+                      first words of a line, not right at the start, or the
+                      take can go silent. Free directions work too, like [tired,
+                      end of a long shift].
+                    </p>
+                  </div>
+                )}
               </section>
               <aside className="side">
                 <section>
@@ -575,6 +709,9 @@ function App() {
                 <section>
                   <div className="section-head">
                     <span className="label">Sampling</span>
+                    <button className="link" onClick={resetSampling}>
+                      Defaults
+                    </button>
                   </div>
                   <label className="slider">
                     <span>
@@ -604,18 +741,71 @@ function App() {
                     />
                   </label>
                   <label className="row">
-                    <span>Max frames per part</span>
+                    <span>Top-k</span>
+                    <input
+                      type="number"
+                      min="0"
+                      max="4096"
+                      value={topK}
+                      onChange={(e) => setTopK(+e.target.value)}
+                    />
+                  </label>
+                  <p className="hint">
+                    {topK ? `Only the ${topK} likeliest tokens.` : "Off."} With
+                    top-k 30 takes go silent a lot more often.
+                  </p>
+                  <label className="row">
+                    <span className="check">
+                      <input
+                        type="checkbox"
+                        checked={!autoLength}
+                        onChange={(e) => setAutoLength(!e.target.checked)}
+                      />
+                      Max frames per part
+                    </span>
                     <input
                       type="number"
                       min="1"
                       max="1024"
                       value={maxTokens}
+                      disabled={autoLength}
                       onChange={(e) => setMaxTokens(+e.target.value)}
                     />
                   </label>
                   <p className="hint">
-                    ≈ {((maxTokens * 2048) / 44100).toFixed(1)} s max per part.
-                    Long text is split into parts of about 300 characters.
+                    {autoLength
+                      ? "Auto: the limit follows the length of the text, " +
+                        "so a take that goes silent stops early."
+                      : `≈ ${((maxTokens * 2048) / 44100).toFixed(1)} s ` +
+                        "max per part."}
+                  </p>
+                  <label className="slider">
+                    <span>
+                      Part size<span className="num">{partSize}</span>
+                    </span>
+                    <input
+                      type="range"
+                      min="100"
+                      max="300"
+                      step="10"
+                      value={partSize}
+                      onChange={(e) => setPartSize(+e.target.value)}
+                    />
+                  </label>
+                  <label className="row">
+                    <span className="check">
+                      <input
+                        type="checkbox"
+                        checked={context}
+                        onChange={(e) => setContext(e.target.checked)}
+                      />
+                      Earlier parts as context
+                    </span>
+                  </label>
+                  <p className="hint">
+                    Long text is split into parts of about this many characters.
+                    With context on, each part hears the first and the last one,
+                    so voices stay the same.
                   </p>
                   <label className="row">
                     <span className="check">

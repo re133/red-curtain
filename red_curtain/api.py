@@ -29,11 +29,13 @@ class VoiceAssignment(BaseModel):
 
 class GenerateRequest(BaseModel):
     text:str=Field(min_length=1,max_length=10000)
-    max_new_tokens:int=Field(default=256,ge=1,le=1024)
+    max_new_tokens:int|None=Field(default=None,ge=1,le=1024)  # None: limit from the text length
     temperature:float=Field(default=1.0,gt=0,le=2)
     top_p:float=Field(default=0.9,gt=0,le=1)
-    top_k:int=Field(default=30,ge=1,le=4096)
+    top_k:int=Field(default=0,ge=0,le=4096)  # 0: off
     seed:int=Field(default=42,ge=0,le=2**32-1)
+    part_size:int=Field(default=300,ge=100,le=300)
+    context:bool=True
     voices:list[VoiceAssignment]=Field(default_factory=list,max_length=4)
 
 
