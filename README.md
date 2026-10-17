@@ -98,8 +98,8 @@ The model code itself is Fish Audio's code from [fish-speech](https://github.com
 
 ## Known issues
 
-- One generation is about 47 seconds of audio max (1024 frames). There's no automatic splitting of long texts yet.
-- Sometimes a take ends in a long silence or gets cut off. Just try a different seed; the UI warns you when it detects this.
+- Long text gets split into parts of about 300 characters, the same way fish-speech does it. Each part can be at most about 47 seconds (1024 frames).
+- Sometimes a take just stops after the first sentence, or runs into silence. That's the model itself, not the AMD port: I compared it step by step against Fish's own reference code running on the CPU and the probabilities match. Preparing the text like fish-speech does (one line per speaker, long text in parts) plus temperature 1.0 / top-p 0.9 made it a lot better: in my test 9 of 12 short takes came out complete, before it was 2 of 12. If it still happens, try another seed; the UI warns you when it detects a long silent tail.
 - `MIOPEN_FIND_MODE=FAST` is set by `start.sh`. Without it, MIOpen searches kernels for ages every time the audio length changes.
 - Only one job runs at a time
 

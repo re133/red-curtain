@@ -17,7 +17,8 @@ from tokenizers import Tokenizer
 from red_curtain.audio import load_codec, write_wav, read_reference
 from red_curtain.fish_omni.backbone import FishOmniBackbone, load_backbone_weights, module_bytes
 from red_curtain.fish_omni.config import FishOmniConfig
-from red_curtain.fish_omni.generate import build_drama3_prompt, generate_drama3
+from red_curtain.fish_omni.generate import build_drama3_prompt, generate_drama3, Drama3PromptTooLongError
+from red_curtain.fish_omni.chunking import Drama3History, split_drama3_text
 from red_curtain.fish_omni.model import FishOmniModel, iter_checkpoint_tensors, AUDIO_DECODER_PREFIXES
 from red_curtain.fish_omni.tower import FishOmniAudioDecoder, load_audio_decoder_weights
 from red_curtain.memory import ExpertCache, OffloadedExperts
@@ -26,6 +27,18 @@ from red_curtain.budget import resolve_budget
 from red_curtain.gpu import device_memory
 
 GIB = 1024 ** 3
+
+
+def build_part_prompt(model, text, prompt_texts, prompt_tokens, history):
+    """Prompt for one text part with as much history as fits, like fish-speech does."""
+    error = None
+    for turns in history.candidates():
+        try:
+            return build_drama3_prompt(text, model.tokenizer, model.config,
+                                       prompt_texts=prompt_texts, prompt_tokens=prompt_tokens, history=turns)
+        except Drama3PromptTooLongError as too_long:
+            error = too_long
+    raise error
 
 
 def validate_checkpoint(path):
@@ -141,7 +154,7 @@ class DramaAdapter:
             raise
 
     @torch.inference_mode()
-    def generate(self, text, output, max_new_tokens=256, temperature=0.7, top_p=0.7, top_k=30, seed=42,
+    def generate(self, text, output, max_new_tokens=256, temperature=1.0, top_p=0.9, top_k=30, seed=42,
                  references=()):
         if self.state != "ready":
             raise RuntimeError(f"Model is not ready: {self.state}")
@@ -184,25 +197,42 @@ class DramaAdapter:
                 reference_texts.append(f'<|speaker:{speaker}|> {transcript}')
             self.progress('preparing','Restoring text model and audio tower to GPU')
             self.residency.resume()
-            prompt = build_drama3_prompt(text, self.model.tokenizer, self.model.config,
-                                        prompt_texts=reference_texts,prompt_tokens=reference_tokens)
+            # Same text preparation as fish-speech: one line per speaker segment and
+            # parts of about 300 bytes, each generated with the first and latest part as context.
+            parts = split_drama3_text(text) or [text]
+            for part in parts:
+                build_drama3_prompt(part, self.model.tokenizer, self.model.config,
+                                    prompt_texts=reference_texts, prompt_tokens=reference_tokens)
+            history = Drama3History()
+            part_codes, reasons = [], []
             # This adapter uses Python CPU routing and dynamic transfers: graph capture is incompatible.
             prior = os.environ.get("FISH_DRAMA3_CUDA_GRAPH")
             os.environ["FISH_DRAMA3_CUDA_GRAPH"] = "0"
             try:
-                frames, reason = generate_drama3(self.model, prompt,
-                    max_new_tokens=max_new_tokens, temperature=temperature, top_p=top_p,
-                    top_k=top_k, prefill_chunk_size=32, progress=report_progress, check=self.check)
+                for index, part in enumerate(parts, 1):
+                    prefix = f"Part {index}/{len(parts)}: " if len(parts) > 1 else ""
+                    prompt = build_part_prompt(self.model, part, reference_texts, reference_tokens, history)
+                    frames, reason = generate_drama3(self.model, prompt,
+                        max_new_tokens=max_new_tokens, temperature=temperature, top_p=top_p,
+                        top_k=top_k, prefill_chunk_size=32, check=self.check,
+                        progress=lambda stage, message: report_progress(stage, prefix + message))
+                    reasons.append(reason)
+                    if frames.numel() == 0:
+                        continue
+                    codes = frames[:,1:].T.contiguous()
+                    if codes.shape[0] != 10 or (codes < 0).any() or (codes[0] >= 4096).any() or (codes[1:] >= 1024).any():
+                        raise RuntimeError("Drama 3 generated invalid DAC codebook indices")
+                    history.push(part, codes)
+                    part_codes.append(codes)
             finally:
                 if prior is None:
                     os.environ.pop("FISH_DRAMA3_CUDA_GRAPH", None)
                 else:
                     os.environ["FISH_DRAMA3_CUDA_GRAPH"] = prior
-            if frames.numel() == 0:
+            if not part_codes:
                 raise RuntimeError("Drama 3 generated zero audio frames")
-            codes = frames[:,1:].T.contiguous()
-            if codes.shape[0] != 10 or (codes < 0).any() or (codes[0] >= 4096).any() or (codes[1:] >= 1024).any():
-                raise RuntimeError("Drama 3 generated invalid DAC codebook indices")
+            reason = "length" if "length" in reasons else "eos"
+            codes = torch.cat(part_codes, dim=1)
             semantic_seconds = time.perf_counter() - started
             # Valid acoustic codes survive a later codec failure. Never replace
             # them with fake audio or discard minutes of successful inference.
@@ -221,13 +251,19 @@ class DramaAdapter:
             offload_bytes = self.residency.park()
             offload_seconds = time.perf_counter() - offload_start
             dac_start_bytes = torch.cuda.memory_allocated()
-            self.progress("decoding", f"DAC decoding {codes.shape[1]} frames")
-            audio, lengths = self.codec.decode(codes[None].cuda(), torch.tensor([codes.shape[1]], device="cuda"))
-            torch.cuda.synchronize()
-            samples = audio[0,0,:int(lengths[0])].float().cpu().numpy()
+            # Decode part by part, as fish-speech does, so DAC memory stays bounded by one part.
+            segments = []
+            for part in part_codes:
+                self.check()
+                self.progress("decoding", f"DAC decoding {part.shape[1]} frames")
+                audio, lengths = self.codec.decode(part[None].cuda(), torch.tensor([part.shape[1]], device="cuda"))
+                torch.cuda.synchronize()
+                segments.append(audio[0,0,:int(lengths[0])].float().cpu().numpy())
+                del audio
+            samples = np.concatenate(segments)
             self.check()
             info = write_wav(output, samples, self.codec.sample_rate)
-            self.metrics.update(info, finish_reason=reason, frames=codes.shape[1],
+            self.metrics.update(info, finish_reason=reason, frames=codes.shape[1], parts=len(parts),
                 decode_offload_bytes=offload_bytes, decode_offload_seconds=offload_seconds,
                 gpu_allocated_before_dac_bytes=dac_start_bytes,
                 semantic_seconds=semantic_seconds, generation_seconds=time.perf_counter()-started,

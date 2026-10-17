@@ -232,8 +232,8 @@ function App() {
     [error, setError] = useState("");
   const [selected, setSelected] = useState(""),
     [maxTokens, setMaxTokens] = useState(256),
-    [temperature, setTemperature] = useState(0.7),
-    [topP, setTopP] = useState(0.7),
+    [temperature, setTemperature] = useState(1.0),
+    [topP, setTopP] = useState(0.9),
     [seed, setSeed] = useState(42);
   const [fixedSeed, setFixedSeed] = useState(false);
   const [assignments, setAssignments] = useState<Record<number, string>>({
@@ -604,7 +604,7 @@ function App() {
                     />
                   </label>
                   <label className="row">
-                    <span>Max frames</span>
+                    <span>Max frames per part</span>
                     <input
                       type="number"
                       min="1"
@@ -614,8 +614,8 @@ function App() {
                     />
                   </label>
                   <p className="hint">
-                    ≈ {((maxTokens * 2048) / 44100).toFixed(1)} s max. Speech
-                    gets cut off at the limit.
+                    ≈ {((maxTokens * 2048) / 44100).toFixed(1)} s max per part.
+                    Long text is split into parts of about 300 characters.
                   </p>
                   <label className="row">
                     <span className="check">
@@ -701,7 +701,7 @@ function App() {
                   </dl>
                   {takeMetrics?.finish_reason === "length" && (
                     <p className="warning-box">
-                      Hit the frame limit, the end is probably cut off.
+                      Hit the frame limit, a part is probably cut off.
                     </p>
                   )}
                 </div>
