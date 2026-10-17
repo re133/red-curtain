@@ -1,0 +1,9816 @@
+{
+  "encoder.block.0.conv.bias": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "0",
+      "cpu",
+      64
+    ],
+    "offset": 0,
+    "shape": [
+      64
+    ],
+    "stride": [
+      1
+    ]
+  },
+  "encoder.block.0.conv.parametrizations.weight.original0": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "1",
+      "cpu",
+      64
+    ],
+    "offset": 0,
+    "shape": [
+      64,
+      1,
+      1
+    ],
+    "stride": [
+      1,
+      1,
+      1
+    ]
+  },
+  "encoder.block.0.conv.parametrizations.weight.original1": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "2",
+      "cpu",
+      448
+    ],
+    "offset": 0,
+    "shape": [
+      64,
+      1,
+      7
+    ],
+    "stride": [
+      7,
+      7,
+      1
+    ]
+  },
+  "encoder.block.1.block.0.block.0.alpha": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "3",
+      "cpu",
+      64
+    ],
+    "offset": 0,
+    "shape": [
+      1,
+      64,
+      1
+    ],
+    "stride": [
+      64,
+      1,
+      1
+    ]
+  },
+  "encoder.block.1.block.0.block.1.conv.bias": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "4",
+      "cpu",
+      64
+    ],
+    "offset": 0,
+    "shape": [
+      64
+    ],
+    "stride": [
+      1
+    ]
+  },
+  "encoder.block.1.block.0.block.1.conv.parametrizations.weight.original0": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "5",
+      "cpu",
+      64
+    ],
+    "offset": 0,
+    "shape": [
+      64,
+      1,
+      1
+    ],
+    "stride": [
+      1,
+      1,
+      1
+    ]
+  },
+  "encoder.block.1.block.0.block.1.conv.parametrizations.weight.original1": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "6",
+      "cpu",
+      28672
+    ],
+    "offset": 0,
+    "shape": [
+      64,
+      64,
+      7
+    ],
+    "stride": [
+      448,
+      7,
+      1
+    ]
+  },
+  "encoder.block.1.block.0.block.2.alpha": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "7",
+      "cpu",
+      64
+    ],
+    "offset": 0,
+    "shape": [
+      1,
+      64,
+      1
+    ],
+    "stride": [
+      64,
+      1,
+      1
+    ]
+  },
+  "encoder.block.1.block.0.block.3.conv.bias": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "8",
+      "cpu",
+      64
+    ],
+    "offset": 0,
+    "shape": [
+      64
+    ],
+    "stride": [
+      1
+    ]
+  },
+  "encoder.block.1.block.0.block.3.conv.parametrizations.weight.original0": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "9",
+      "cpu",
+      64
+    ],
+    "offset": 0,
+    "shape": [
+      64,
+      1,
+      1
+    ],
+    "stride": [
+      1,
+      1,
+      1
+    ]
+  },
+  "encoder.block.1.block.0.block.3.conv.parametrizations.weight.original1": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "10",
+      "cpu",
+      4096
+    ],
+    "offset": 0,
+    "shape": [
+      64,
+      64,
+      1
+    ],
+    "stride": [
+      64,
+      1,
+      1
+    ]
+  },
+  "encoder.block.1.block.1.block.0.alpha": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "11",
+      "cpu",
+      64
+    ],
+    "offset": 0,
+    "shape": [
+      1,
+      64,
+      1
+    ],
+    "stride": [
+      64,
+      1,
+      1
+    ]
+  },
+  "encoder.block.1.block.1.block.1.conv.bias": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "12",
+      "cpu",
+      64
+    ],
+    "offset": 0,
+    "shape": [
+      64
+    ],
+    "stride": [
+      1
+    ]
+  },
+  "encoder.block.1.block.1.block.1.conv.parametrizations.weight.original0": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "13",
+      "cpu",
+      64
+    ],
+    "offset": 0,
+    "shape": [
+      64,
+      1,
+      1
+    ],
+    "stride": [
+      1,
+      1,
+      1
+    ]
+  },
+  "encoder.block.1.block.1.block.1.conv.parametrizations.weight.original1": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "14",
+      "cpu",
+      28672
+    ],
+    "offset": 0,
+    "shape": [
+      64,
+      64,
+      7
+    ],
+    "stride": [
+      448,
+      7,
+      1
+    ]
+  },
+  "encoder.block.1.block.1.block.2.alpha": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "15",
+      "cpu",
+      64
+    ],
+    "offset": 0,
+    "shape": [
+      1,
+      64,
+      1
+    ],
+    "stride": [
+      64,
+      1,
+      1
+    ]
+  },
+  "encoder.block.1.block.1.block.3.conv.bias": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "16",
+      "cpu",
+      64
+    ],
+    "offset": 0,
+    "shape": [
+      64
+    ],
+    "stride": [
+      1
+    ]
+  },
+  "encoder.block.1.block.1.block.3.conv.parametrizations.weight.original0": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "17",
+      "cpu",
+      64
+    ],
+    "offset": 0,
+    "shape": [
+      64,
+      1,
+      1
+    ],
+    "stride": [
+      1,
+      1,
+      1
+    ]
+  },
+  "encoder.block.1.block.1.block.3.conv.parametrizations.weight.original1": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "18",
+      "cpu",
+      4096
+    ],
+    "offset": 0,
+    "shape": [
+      64,
+      64,
+      1
+    ],
+    "stride": [
+      64,
+      1,
+      1
+    ]
+  },
+  "encoder.block.1.block.2.block.0.alpha": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "19",
+      "cpu",
+      64
+    ],
+    "offset": 0,
+    "shape": [
+      1,
+      64,
+      1
+    ],
+    "stride": [
+      64,
+      1,
+      1
+    ]
+  },
+  "encoder.block.1.block.2.block.1.conv.bias": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "20",
+      "cpu",
+      64
+    ],
+    "offset": 0,
+    "shape": [
+      64
+    ],
+    "stride": [
+      1
+    ]
+  },
+  "encoder.block.1.block.2.block.1.conv.parametrizations.weight.original0": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "21",
+      "cpu",
+      64
+    ],
+    "offset": 0,
+    "shape": [
+      64,
+      1,
+      1
+    ],
+    "stride": [
+      1,
+      1,
+      1
+    ]
+  },
+  "encoder.block.1.block.2.block.1.conv.parametrizations.weight.original1": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "22",
+      "cpu",
+      28672
+    ],
+    "offset": 0,
+    "shape": [
+      64,
+      64,
+      7
+    ],
+    "stride": [
+      448,
+      7,
+      1
+    ]
+  },
+  "encoder.block.1.block.2.block.2.alpha": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "23",
+      "cpu",
+      64
+    ],
+    "offset": 0,
+    "shape": [
+      1,
+      64,
+      1
+    ],
+    "stride": [
+      64,
+      1,
+      1
+    ]
+  },
+  "encoder.block.1.block.2.block.3.conv.bias": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "24",
+      "cpu",
+      64
+    ],
+    "offset": 0,
+    "shape": [
+      64
+    ],
+    "stride": [
+      1
+    ]
+  },
+  "encoder.block.1.block.2.block.3.conv.parametrizations.weight.original0": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "25",
+      "cpu",
+      64
+    ],
+    "offset": 0,
+    "shape": [
+      64,
+      1,
+      1
+    ],
+    "stride": [
+      1,
+      1,
+      1
+    ]
+  },
+  "encoder.block.1.block.2.block.3.conv.parametrizations.weight.original1": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "26",
+      "cpu",
+      4096
+    ],
+    "offset": 0,
+    "shape": [
+      64,
+      64,
+      1
+    ],
+    "stride": [
+      64,
+      1,
+      1
+    ]
+  },
+  "encoder.block.1.block.3.alpha": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "27",
+      "cpu",
+      64
+    ],
+    "offset": 0,
+    "shape": [
+      1,
+      64,
+      1
+    ],
+    "stride": [
+      64,
+      1,
+      1
+    ]
+  },
+  "encoder.block.1.block.4.conv.bias": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "28",
+      "cpu",
+      128
+    ],
+    "offset": 0,
+    "shape": [
+      128
+    ],
+    "stride": [
+      1
+    ]
+  },
+  "encoder.block.1.block.4.conv.parametrizations.weight.original0": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "29",
+      "cpu",
+      128
+    ],
+    "offset": 0,
+    "shape": [
+      128,
+      1,
+      1
+    ],
+    "stride": [
+      1,
+      1,
+      1
+    ]
+  },
+  "encoder.block.1.block.4.conv.parametrizations.weight.original1": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "30",
+      "cpu",
+      32768
+    ],
+    "offset": 0,
+    "shape": [
+      128,
+      64,
+      4
+    ],
+    "stride": [
+      256,
+      4,
+      1
+    ]
+  },
+  "encoder.block.2.block.0.block.0.alpha": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "31",
+      "cpu",
+      128
+    ],
+    "offset": 0,
+    "shape": [
+      1,
+      128,
+      1
+    ],
+    "stride": [
+      128,
+      1,
+      1
+    ]
+  },
+  "encoder.block.2.block.0.block.1.conv.bias": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "32",
+      "cpu",
+      128
+    ],
+    "offset": 0,
+    "shape": [
+      128
+    ],
+    "stride": [
+      1
+    ]
+  },
+  "encoder.block.2.block.0.block.1.conv.parametrizations.weight.original0": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "33",
+      "cpu",
+      128
+    ],
+    "offset": 0,
+    "shape": [
+      128,
+      1,
+      1
+    ],
+    "stride": [
+      1,
+      1,
+      1
+    ]
+  },
+  "encoder.block.2.block.0.block.1.conv.parametrizations.weight.original1": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "34",
+      "cpu",
+      114688
+    ],
+    "offset": 0,
+    "shape": [
+      128,
+      128,
+      7
+    ],
+    "stride": [
+      896,
+      7,
+      1
+    ]
+  },
+  "encoder.block.2.block.0.block.2.alpha": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "35",
+      "cpu",
+      128
+    ],
+    "offset": 0,
+    "shape": [
+      1,
+      128,
+      1
+    ],
+    "stride": [
+      128,
+      1,
+      1
+    ]
+  },
+  "encoder.block.2.block.0.block.3.conv.bias": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "36",
+      "cpu",
+      128
+    ],
+    "offset": 0,
+    "shape": [
+      128
+    ],
+    "stride": [
+      1
+    ]
+  },
+  "encoder.block.2.block.0.block.3.conv.parametrizations.weight.original0": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "37",
+      "cpu",
+      128
+    ],
+    "offset": 0,
+    "shape": [
+      128,
+      1,
+      1
+    ],
+    "stride": [
+      1,
+      1,
+      1
+    ]
+  },
+  "encoder.block.2.block.0.block.3.conv.parametrizations.weight.original1": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "38",
+      "cpu",
+      16384
+    ],
+    "offset": 0,
+    "shape": [
+      128,
+      128,
+      1
+    ],
+    "stride": [
+      128,
+      1,
+      1
+    ]
+  },
+  "encoder.block.2.block.1.block.0.alpha": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "39",
+      "cpu",
+      128
+    ],
+    "offset": 0,
+    "shape": [
+      1,
+      128,
+      1
+    ],
+    "stride": [
+      128,
+      1,
+      1
+    ]
+  },
+  "encoder.block.2.block.1.block.1.conv.bias": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "40",
+      "cpu",
+      128
+    ],
+    "offset": 0,
+    "shape": [
+      128
+    ],
+    "stride": [
+      1
+    ]
+  },
+  "encoder.block.2.block.1.block.1.conv.parametrizations.weight.original0": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "41",
+      "cpu",
+      128
+    ],
+    "offset": 0,
+    "shape": [
+      128,
+      1,
+      1
+    ],
+    "stride": [
+      1,
+      1,
+      1
+    ]
+  },
+  "encoder.block.2.block.1.block.1.conv.parametrizations.weight.original1": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "42",
+      "cpu",
+      114688
+    ],
+    "offset": 0,
+    "shape": [
+      128,
+      128,
+      7
+    ],
+    "stride": [
+      896,
+      7,
+      1
+    ]
+  },
+  "encoder.block.2.block.1.block.2.alpha": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "43",
+      "cpu",
+      128
+    ],
+    "offset": 0,
+    "shape": [
+      1,
+      128,
+      1
+    ],
+    "stride": [
+      128,
+      1,
+      1
+    ]
+  },
+  "encoder.block.2.block.1.block.3.conv.bias": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "44",
+      "cpu",
+      128
+    ],
+    "offset": 0,
+    "shape": [
+      128
+    ],
+    "stride": [
+      1
+    ]
+  },
+  "encoder.block.2.block.1.block.3.conv.parametrizations.weight.original0": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "45",
+      "cpu",
+      128
+    ],
+    "offset": 0,
+    "shape": [
+      128,
+      1,
+      1
+    ],
+    "stride": [
+      1,
+      1,
+      1
+    ]
+  },
+  "encoder.block.2.block.1.block.3.conv.parametrizations.weight.original1": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "46",
+      "cpu",
+      16384
+    ],
+    "offset": 0,
+    "shape": [
+      128,
+      128,
+      1
+    ],
+    "stride": [
+      128,
+      1,
+      1
+    ]
+  },
+  "encoder.block.2.block.2.block.0.alpha": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "47",
+      "cpu",
+      128
+    ],
+    "offset": 0,
+    "shape": [
+      1,
+      128,
+      1
+    ],
+    "stride": [
+      128,
+      1,
+      1
+    ]
+  },
+  "encoder.block.2.block.2.block.1.conv.bias": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "48",
+      "cpu",
+      128
+    ],
+    "offset": 0,
+    "shape": [
+      128
+    ],
+    "stride": [
+      1
+    ]
+  },
+  "encoder.block.2.block.2.block.1.conv.parametrizations.weight.original0": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "49",
+      "cpu",
+      128
+    ],
+    "offset": 0,
+    "shape": [
+      128,
+      1,
+      1
+    ],
+    "stride": [
+      1,
+      1,
+      1
+    ]
+  },
+  "encoder.block.2.block.2.block.1.conv.parametrizations.weight.original1": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "50",
+      "cpu",
+      114688
+    ],
+    "offset": 0,
+    "shape": [
+      128,
+      128,
+      7
+    ],
+    "stride": [
+      896,
+      7,
+      1
+    ]
+  },
+  "encoder.block.2.block.2.block.2.alpha": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "51",
+      "cpu",
+      128
+    ],
+    "offset": 0,
+    "shape": [
+      1,
+      128,
+      1
+    ],
+    "stride": [
+      128,
+      1,
+      1
+    ]
+  },
+  "encoder.block.2.block.2.block.3.conv.bias": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "52",
+      "cpu",
+      128
+    ],
+    "offset": 0,
+    "shape": [
+      128
+    ],
+    "stride": [
+      1
+    ]
+  },
+  "encoder.block.2.block.2.block.3.conv.parametrizations.weight.original0": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "53",
+      "cpu",
+      128
+    ],
+    "offset": 0,
+    "shape": [
+      128,
+      1,
+      1
+    ],
+    "stride": [
+      1,
+      1,
+      1
+    ]
+  },
+  "encoder.block.2.block.2.block.3.conv.parametrizations.weight.original1": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "54",
+      "cpu",
+      16384
+    ],
+    "offset": 0,
+    "shape": [
+      128,
+      128,
+      1
+    ],
+    "stride": [
+      128,
+      1,
+      1
+    ]
+  },
+  "encoder.block.2.block.3.alpha": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "55",
+      "cpu",
+      128
+    ],
+    "offset": 0,
+    "shape": [
+      1,
+      128,
+      1
+    ],
+    "stride": [
+      128,
+      1,
+      1
+    ]
+  },
+  "encoder.block.2.block.4.conv.bias": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "56",
+      "cpu",
+      256
+    ],
+    "offset": 0,
+    "shape": [
+      256
+    ],
+    "stride": [
+      1
+    ]
+  },
+  "encoder.block.2.block.4.conv.parametrizations.weight.original0": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "57",
+      "cpu",
+      256
+    ],
+    "offset": 0,
+    "shape": [
+      256,
+      1,
+      1
+    ],
+    "stride": [
+      1,
+      1,
+      1
+    ]
+  },
+  "encoder.block.2.block.4.conv.parametrizations.weight.original1": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "58",
+      "cpu",
+      262144
+    ],
+    "offset": 0,
+    "shape": [
+      256,
+      128,
+      8
+    ],
+    "stride": [
+      1024,
+      8,
+      1
+    ]
+  },
+  "encoder.block.3.block.0.block.0.alpha": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "59",
+      "cpu",
+      256
+    ],
+    "offset": 0,
+    "shape": [
+      1,
+      256,
+      1
+    ],
+    "stride": [
+      256,
+      1,
+      1
+    ]
+  },
+  "encoder.block.3.block.0.block.1.conv.bias": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "60",
+      "cpu",
+      256
+    ],
+    "offset": 0,
+    "shape": [
+      256
+    ],
+    "stride": [
+      1
+    ]
+  },
+  "encoder.block.3.block.0.block.1.conv.parametrizations.weight.original0": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "61",
+      "cpu",
+      256
+    ],
+    "offset": 0,
+    "shape": [
+      256,
+      1,
+      1
+    ],
+    "stride": [
+      1,
+      1,
+      1
+    ]
+  },
+  "encoder.block.3.block.0.block.1.conv.parametrizations.weight.original1": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "62",
+      "cpu",
+      458752
+    ],
+    "offset": 0,
+    "shape": [
+      256,
+      256,
+      7
+    ],
+    "stride": [
+      1792,
+      7,
+      1
+    ]
+  },
+  "encoder.block.3.block.0.block.2.alpha": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "63",
+      "cpu",
+      256
+    ],
+    "offset": 0,
+    "shape": [
+      1,
+      256,
+      1
+    ],
+    "stride": [
+      256,
+      1,
+      1
+    ]
+  },
+  "encoder.block.3.block.0.block.3.conv.bias": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "64",
+      "cpu",
+      256
+    ],
+    "offset": 0,
+    "shape": [
+      256
+    ],
+    "stride": [
+      1
+    ]
+  },
+  "encoder.block.3.block.0.block.3.conv.parametrizations.weight.original0": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "65",
+      "cpu",
+      256
+    ],
+    "offset": 0,
+    "shape": [
+      256,
+      1,
+      1
+    ],
+    "stride": [
+      1,
+      1,
+      1
+    ]
+  },
+  "encoder.block.3.block.0.block.3.conv.parametrizations.weight.original1": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "66",
+      "cpu",
+      65536
+    ],
+    "offset": 0,
+    "shape": [
+      256,
+      256,
+      1
+    ],
+    "stride": [
+      256,
+      1,
+      1
+    ]
+  },
+  "encoder.block.3.block.1.block.0.alpha": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "67",
+      "cpu",
+      256
+    ],
+    "offset": 0,
+    "shape": [
+      1,
+      256,
+      1
+    ],
+    "stride": [
+      256,
+      1,
+      1
+    ]
+  },
+  "encoder.block.3.block.1.block.1.conv.bias": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "68",
+      "cpu",
+      256
+    ],
+    "offset": 0,
+    "shape": [
+      256
+    ],
+    "stride": [
+      1
+    ]
+  },
+  "encoder.block.3.block.1.block.1.conv.parametrizations.weight.original0": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "69",
+      "cpu",
+      256
+    ],
+    "offset": 0,
+    "shape": [
+      256,
+      1,
+      1
+    ],
+    "stride": [
+      1,
+      1,
+      1
+    ]
+  },
+  "encoder.block.3.block.1.block.1.conv.parametrizations.weight.original1": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "70",
+      "cpu",
+      458752
+    ],
+    "offset": 0,
+    "shape": [
+      256,
+      256,
+      7
+    ],
+    "stride": [
+      1792,
+      7,
+      1
+    ]
+  },
+  "encoder.block.3.block.1.block.2.alpha": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "71",
+      "cpu",
+      256
+    ],
+    "offset": 0,
+    "shape": [
+      1,
+      256,
+      1
+    ],
+    "stride": [
+      256,
+      1,
+      1
+    ]
+  },
+  "encoder.block.3.block.1.block.3.conv.bias": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "72",
+      "cpu",
+      256
+    ],
+    "offset": 0,
+    "shape": [
+      256
+    ],
+    "stride": [
+      1
+    ]
+  },
+  "encoder.block.3.block.1.block.3.conv.parametrizations.weight.original0": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "73",
+      "cpu",
+      256
+    ],
+    "offset": 0,
+    "shape": [
+      256,
+      1,
+      1
+    ],
+    "stride": [
+      1,
+      1,
+      1
+    ]
+  },
+  "encoder.block.3.block.1.block.3.conv.parametrizations.weight.original1": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "74",
+      "cpu",
+      65536
+    ],
+    "offset": 0,
+    "shape": [
+      256,
+      256,
+      1
+    ],
+    "stride": [
+      256,
+      1,
+      1
+    ]
+  },
+  "encoder.block.3.block.2.block.0.alpha": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "75",
+      "cpu",
+      256
+    ],
+    "offset": 0,
+    "shape": [
+      1,
+      256,
+      1
+    ],
+    "stride": [
+      256,
+      1,
+      1
+    ]
+  },
+  "encoder.block.3.block.2.block.1.conv.bias": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "76",
+      "cpu",
+      256
+    ],
+    "offset": 0,
+    "shape": [
+      256
+    ],
+    "stride": [
+      1
+    ]
+  },
+  "encoder.block.3.block.2.block.1.conv.parametrizations.weight.original0": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "77",
+      "cpu",
+      256
+    ],
+    "offset": 0,
+    "shape": [
+      256,
+      1,
+      1
+    ],
+    "stride": [
+      1,
+      1,
+      1
+    ]
+  },
+  "encoder.block.3.block.2.block.1.conv.parametrizations.weight.original1": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "78",
+      "cpu",
+      458752
+    ],
+    "offset": 0,
+    "shape": [
+      256,
+      256,
+      7
+    ],
+    "stride": [
+      1792,
+      7,
+      1
+    ]
+  },
+  "encoder.block.3.block.2.block.2.alpha": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "79",
+      "cpu",
+      256
+    ],
+    "offset": 0,
+    "shape": [
+      1,
+      256,
+      1
+    ],
+    "stride": [
+      256,
+      1,
+      1
+    ]
+  },
+  "encoder.block.3.block.2.block.3.conv.bias": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "80",
+      "cpu",
+      256
+    ],
+    "offset": 0,
+    "shape": [
+      256
+    ],
+    "stride": [
+      1
+    ]
+  },
+  "encoder.block.3.block.2.block.3.conv.parametrizations.weight.original0": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "81",
+      "cpu",
+      256
+    ],
+    "offset": 0,
+    "shape": [
+      256,
+      1,
+      1
+    ],
+    "stride": [
+      1,
+      1,
+      1
+    ]
+  },
+  "encoder.block.3.block.2.block.3.conv.parametrizations.weight.original1": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "82",
+      "cpu",
+      65536
+    ],
+    "offset": 0,
+    "shape": [
+      256,
+      256,
+      1
+    ],
+    "stride": [
+      256,
+      1,
+      1
+    ]
+  },
+  "encoder.block.3.block.3.alpha": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "83",
+      "cpu",
+      256
+    ],
+    "offset": 0,
+    "shape": [
+      1,
+      256,
+      1
+    ],
+    "stride": [
+      256,
+      1,
+      1
+    ]
+  },
+  "encoder.block.3.block.4.conv.bias": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "84",
+      "cpu",
+      512
+    ],
+    "offset": 0,
+    "shape": [
+      512
+    ],
+    "stride": [
+      1
+    ]
+  },
+  "encoder.block.3.block.4.conv.parametrizations.weight.original0": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "85",
+      "cpu",
+      512
+    ],
+    "offset": 0,
+    "shape": [
+      512,
+      1,
+      1
+    ],
+    "stride": [
+      1,
+      1,
+      1
+    ]
+  },
+  "encoder.block.3.block.4.conv.parametrizations.weight.original1": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "86",
+      "cpu",
+      2097152
+    ],
+    "offset": 0,
+    "shape": [
+      512,
+      256,
+      16
+    ],
+    "stride": [
+      4096,
+      16,
+      1
+    ]
+  },
+  "encoder.block.4.block.0.block.0.alpha": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "87",
+      "cpu",
+      512
+    ],
+    "offset": 0,
+    "shape": [
+      1,
+      512,
+      1
+    ],
+    "stride": [
+      512,
+      1,
+      1
+    ]
+  },
+  "encoder.block.4.block.0.block.1.conv.bias": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "88",
+      "cpu",
+      512
+    ],
+    "offset": 0,
+    "shape": [
+      512
+    ],
+    "stride": [
+      1
+    ]
+  },
+  "encoder.block.4.block.0.block.1.conv.parametrizations.weight.original0": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "89",
+      "cpu",
+      512
+    ],
+    "offset": 0,
+    "shape": [
+      512,
+      1,
+      1
+    ],
+    "stride": [
+      1,
+      1,
+      1
+    ]
+  },
+  "encoder.block.4.block.0.block.1.conv.parametrizations.weight.original1": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "90",
+      "cpu",
+      1835008
+    ],
+    "offset": 0,
+    "shape": [
+      512,
+      512,
+      7
+    ],
+    "stride": [
+      3584,
+      7,
+      1
+    ]
+  },
+  "encoder.block.4.block.0.block.2.alpha": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "91",
+      "cpu",
+      512
+    ],
+    "offset": 0,
+    "shape": [
+      1,
+      512,
+      1
+    ],
+    "stride": [
+      512,
+      1,
+      1
+    ]
+  },
+  "encoder.block.4.block.0.block.3.conv.bias": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "92",
+      "cpu",
+      512
+    ],
+    "offset": 0,
+    "shape": [
+      512
+    ],
+    "stride": [
+      1
+    ]
+  },
+  "encoder.block.4.block.0.block.3.conv.parametrizations.weight.original0": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "93",
+      "cpu",
+      512
+    ],
+    "offset": 0,
+    "shape": [
+      512,
+      1,
+      1
+    ],
+    "stride": [
+      1,
+      1,
+      1
+    ]
+  },
+  "encoder.block.4.block.0.block.3.conv.parametrizations.weight.original1": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "94",
+      "cpu",
+      262144
+    ],
+    "offset": 0,
+    "shape": [
+      512,
+      512,
+      1
+    ],
+    "stride": [
+      512,
+      1,
+      1
+    ]
+  },
+  "encoder.block.4.block.1.block.0.alpha": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "95",
+      "cpu",
+      512
+    ],
+    "offset": 0,
+    "shape": [
+      1,
+      512,
+      1
+    ],
+    "stride": [
+      512,
+      1,
+      1
+    ]
+  },
+  "encoder.block.4.block.1.block.1.conv.bias": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "96",
+      "cpu",
+      512
+    ],
+    "offset": 0,
+    "shape": [
+      512
+    ],
+    "stride": [
+      1
+    ]
+  },
+  "encoder.block.4.block.1.block.1.conv.parametrizations.weight.original0": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "97",
+      "cpu",
+      512
+    ],
+    "offset": 0,
+    "shape": [
+      512,
+      1,
+      1
+    ],
+    "stride": [
+      1,
+      1,
+      1
+    ]
+  },
+  "encoder.block.4.block.1.block.1.conv.parametrizations.weight.original1": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "98",
+      "cpu",
+      1835008
+    ],
+    "offset": 0,
+    "shape": [
+      512,
+      512,
+      7
+    ],
+    "stride": [
+      3584,
+      7,
+      1
+    ]
+  },
+  "encoder.block.4.block.1.block.2.alpha": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "99",
+      "cpu",
+      512
+    ],
+    "offset": 0,
+    "shape": [
+      1,
+      512,
+      1
+    ],
+    "stride": [
+      512,
+      1,
+      1
+    ]
+  },
+  "encoder.block.4.block.1.block.3.conv.bias": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "100",
+      "cpu",
+      512
+    ],
+    "offset": 0,
+    "shape": [
+      512
+    ],
+    "stride": [
+      1
+    ]
+  },
+  "encoder.block.4.block.1.block.3.conv.parametrizations.weight.original0": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "101",
+      "cpu",
+      512
+    ],
+    "offset": 0,
+    "shape": [
+      512,
+      1,
+      1
+    ],
+    "stride": [
+      1,
+      1,
+      1
+    ]
+  },
+  "encoder.block.4.block.1.block.3.conv.parametrizations.weight.original1": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "102",
+      "cpu",
+      262144
+    ],
+    "offset": 0,
+    "shape": [
+      512,
+      512,
+      1
+    ],
+    "stride": [
+      512,
+      1,
+      1
+    ]
+  },
+  "encoder.block.4.block.2.block.0.alpha": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "103",
+      "cpu",
+      512
+    ],
+    "offset": 0,
+    "shape": [
+      1,
+      512,
+      1
+    ],
+    "stride": [
+      512,
+      1,
+      1
+    ]
+  },
+  "encoder.block.4.block.2.block.1.conv.bias": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "104",
+      "cpu",
+      512
+    ],
+    "offset": 0,
+    "shape": [
+      512
+    ],
+    "stride": [
+      1
+    ]
+  },
+  "encoder.block.4.block.2.block.1.conv.parametrizations.weight.original0": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "105",
+      "cpu",
+      512
+    ],
+    "offset": 0,
+    "shape": [
+      512,
+      1,
+      1
+    ],
+    "stride": [
+      1,
+      1,
+      1
+    ]
+  },
+  "encoder.block.4.block.2.block.1.conv.parametrizations.weight.original1": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "106",
+      "cpu",
+      1835008
+    ],
+    "offset": 0,
+    "shape": [
+      512,
+      512,
+      7
+    ],
+    "stride": [
+      3584,
+      7,
+      1
+    ]
+  },
+  "encoder.block.4.block.2.block.2.alpha": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "107",
+      "cpu",
+      512
+    ],
+    "offset": 0,
+    "shape": [
+      1,
+      512,
+      1
+    ],
+    "stride": [
+      512,
+      1,
+      1
+    ]
+  },
+  "encoder.block.4.block.2.block.3.conv.bias": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "108",
+      "cpu",
+      512
+    ],
+    "offset": 0,
+    "shape": [
+      512
+    ],
+    "stride": [
+      1
+    ]
+  },
+  "encoder.block.4.block.2.block.3.conv.parametrizations.weight.original0": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "109",
+      "cpu",
+      512
+    ],
+    "offset": 0,
+    "shape": [
+      512,
+      1,
+      1
+    ],
+    "stride": [
+      1,
+      1,
+      1
+    ]
+  },
+  "encoder.block.4.block.2.block.3.conv.parametrizations.weight.original1": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "110",
+      "cpu",
+      262144
+    ],
+    "offset": 0,
+    "shape": [
+      512,
+      512,
+      1
+    ],
+    "stride": [
+      512,
+      1,
+      1
+    ]
+  },
+  "encoder.block.4.block.3.alpha": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "111",
+      "cpu",
+      512
+    ],
+    "offset": 0,
+    "shape": [
+      1,
+      512,
+      1
+    ],
+    "stride": [
+      512,
+      1,
+      1
+    ]
+  },
+  "encoder.block.4.block.4.conv.bias": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "112",
+      "cpu",
+      1024
+    ],
+    "offset": 0,
+    "shape": [
+      1024
+    ],
+    "stride": [
+      1
+    ]
+  },
+  "encoder.block.4.block.4.conv.parametrizations.weight.original0": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "113",
+      "cpu",
+      1024
+    ],
+    "offset": 0,
+    "shape": [
+      1024,
+      1,
+      1
+    ],
+    "stride": [
+      1,
+      1,
+      1
+    ]
+  },
+  "encoder.block.4.block.4.conv.parametrizations.weight.original1": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "114",
+      "cpu",
+      8388608
+    ],
+    "offset": 0,
+    "shape": [
+      1024,
+      512,
+      16
+    ],
+    "stride": [
+      8192,
+      16,
+      1
+    ]
+  },
+  "encoder.block.4.block.5.freqs_cis": {
+    "storage": [
+      "storage",
+      "BFloat16Storage",
+      "115",
+      "cpu",
+      1048576
+    ],
+    "offset": 0,
+    "shape": [
+      16384,
+      32,
+      2
+    ],
+    "stride": [
+      64,
+      2,
+      1
+    ]
+  },
+  "encoder.block.4.block.5.causal_mask": {
+    "storage": [
+      "storage",
+      "BoolStorage",
+      "116",
+      "cpu",
+      268435456
+    ],
+    "offset": 0,
+    "shape": [
+      16384,
+      16384
+    ],
+    "stride": [
+      16384,
+      1
+    ]
+  },
+  "encoder.block.4.block.5.layers.0.attention.wqkv.weight": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "117",
+      "cpu",
+      3145728
+    ],
+    "offset": 0,
+    "shape": [
+      3072,
+      1024
+    ],
+    "stride": [
+      1024,
+      1
+    ]
+  },
+  "encoder.block.4.block.5.layers.0.attention.wo.weight": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "118",
+      "cpu",
+      1048576
+    ],
+    "offset": 0,
+    "shape": [
+      1024,
+      1024
+    ],
+    "stride": [
+      1024,
+      1
+    ]
+  },
+  "encoder.block.4.block.5.layers.0.feed_forward.w1.weight": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "119",
+      "cpu",
+      3145728
+    ],
+    "offset": 0,
+    "shape": [
+      3072,
+      1024
+    ],
+    "stride": [
+      1024,
+      1
+    ]
+  },
+  "encoder.block.4.block.5.layers.0.feed_forward.w3.weight": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "120",
+      "cpu",
+      3145728
+    ],
+    "offset": 0,
+    "shape": [
+      3072,
+      1024
+    ],
+    "stride": [
+      1024,
+      1
+    ]
+  },
+  "encoder.block.4.block.5.layers.0.feed_forward.w2.weight": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "121",
+      "cpu",
+      3145728
+    ],
+    "offset": 0,
+    "shape": [
+      1024,
+      3072
+    ],
+    "stride": [
+      3072,
+      1
+    ]
+  },
+  "encoder.block.4.block.5.layers.0.ffn_norm.weight": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "122",
+      "cpu",
+      1024
+    ],
+    "offset": 0,
+    "shape": [
+      1024
+    ],
+    "stride": [
+      1
+    ]
+  },
+  "encoder.block.4.block.5.layers.0.attention_norm.weight": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "123",
+      "cpu",
+      1024
+    ],
+    "offset": 0,
+    "shape": [
+      1024
+    ],
+    "stride": [
+      1
+    ]
+  },
+  "encoder.block.4.block.5.layers.0.attention_layer_scale.gamma": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "124",
+      "cpu",
+      1024
+    ],
+    "offset": 0,
+    "shape": [
+      1024
+    ],
+    "stride": [
+      1
+    ]
+  },
+  "encoder.block.4.block.5.layers.0.ffn_layer_scale.gamma": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "125",
+      "cpu",
+      1024
+    ],
+    "offset": 0,
+    "shape": [
+      1024
+    ],
+    "stride": [
+      1
+    ]
+  },
+  "encoder.block.4.block.5.layers.1.attention.wqkv.weight": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "126",
+      "cpu",
+      3145728
+    ],
+    "offset": 0,
+    "shape": [
+      3072,
+      1024
+    ],
+    "stride": [
+      1024,
+      1
+    ]
+  },
+  "encoder.block.4.block.5.layers.1.attention.wo.weight": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "127",
+      "cpu",
+      1048576
+    ],
+    "offset": 0,
+    "shape": [
+      1024,
+      1024
+    ],
+    "stride": [
+      1024,
+      1
+    ]
+  },
+  "encoder.block.4.block.5.layers.1.feed_forward.w1.weight": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "128",
+      "cpu",
+      3145728
+    ],
+    "offset": 0,
+    "shape": [
+      3072,
+      1024
+    ],
+    "stride": [
+      1024,
+      1
+    ]
+  },
+  "encoder.block.4.block.5.layers.1.feed_forward.w3.weight": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "129",
+      "cpu",
+      3145728
+    ],
+    "offset": 0,
+    "shape": [
+      3072,
+      1024
+    ],
+    "stride": [
+      1024,
+      1
+    ]
+  },
+  "encoder.block.4.block.5.layers.1.feed_forward.w2.weight": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "130",
+      "cpu",
+      3145728
+    ],
+    "offset": 0,
+    "shape": [
+      1024,
+      3072
+    ],
+    "stride": [
+      3072,
+      1
+    ]
+  },
+  "encoder.block.4.block.5.layers.1.ffn_norm.weight": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "131",
+      "cpu",
+      1024
+    ],
+    "offset": 0,
+    "shape": [
+      1024
+    ],
+    "stride": [
+      1
+    ]
+  },
+  "encoder.block.4.block.5.layers.1.attention_norm.weight": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "132",
+      "cpu",
+      1024
+    ],
+    "offset": 0,
+    "shape": [
+      1024
+    ],
+    "stride": [
+      1
+    ]
+  },
+  "encoder.block.4.block.5.layers.1.attention_layer_scale.gamma": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "133",
+      "cpu",
+      1024
+    ],
+    "offset": 0,
+    "shape": [
+      1024
+    ],
+    "stride": [
+      1
+    ]
+  },
+  "encoder.block.4.block.5.layers.1.ffn_layer_scale.gamma": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "134",
+      "cpu",
+      1024
+    ],
+    "offset": 0,
+    "shape": [
+      1024
+    ],
+    "stride": [
+      1
+    ]
+  },
+  "encoder.block.4.block.5.layers.2.attention.wqkv.weight": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "135",
+      "cpu",
+      3145728
+    ],
+    "offset": 0,
+    "shape": [
+      3072,
+      1024
+    ],
+    "stride": [
+      1024,
+      1
+    ]
+  },
+  "encoder.block.4.block.5.layers.2.attention.wo.weight": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "136",
+      "cpu",
+      1048576
+    ],
+    "offset": 0,
+    "shape": [
+      1024,
+      1024
+    ],
+    "stride": [
+      1024,
+      1
+    ]
+  },
+  "encoder.block.4.block.5.layers.2.feed_forward.w1.weight": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "137",
+      "cpu",
+      3145728
+    ],
+    "offset": 0,
+    "shape": [
+      3072,
+      1024
+    ],
+    "stride": [
+      1024,
+      1
+    ]
+  },
+  "encoder.block.4.block.5.layers.2.feed_forward.w3.weight": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "138",
+      "cpu",
+      3145728
+    ],
+    "offset": 0,
+    "shape": [
+      3072,
+      1024
+    ],
+    "stride": [
+      1024,
+      1
+    ]
+  },
+  "encoder.block.4.block.5.layers.2.feed_forward.w2.weight": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "139",
+      "cpu",
+      3145728
+    ],
+    "offset": 0,
+    "shape": [
+      1024,
+      3072
+    ],
+    "stride": [
+      3072,
+      1
+    ]
+  },
+  "encoder.block.4.block.5.layers.2.ffn_norm.weight": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "140",
+      "cpu",
+      1024
+    ],
+    "offset": 0,
+    "shape": [
+      1024
+    ],
+    "stride": [
+      1
+    ]
+  },
+  "encoder.block.4.block.5.layers.2.attention_norm.weight": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "141",
+      "cpu",
+      1024
+    ],
+    "offset": 0,
+    "shape": [
+      1024
+    ],
+    "stride": [
+      1
+    ]
+  },
+  "encoder.block.4.block.5.layers.2.attention_layer_scale.gamma": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "142",
+      "cpu",
+      1024
+    ],
+    "offset": 0,
+    "shape": [
+      1024
+    ],
+    "stride": [
+      1
+    ]
+  },
+  "encoder.block.4.block.5.layers.2.ffn_layer_scale.gamma": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "143",
+      "cpu",
+      1024
+    ],
+    "offset": 0,
+    "shape": [
+      1024
+    ],
+    "stride": [
+      1
+    ]
+  },
+  "encoder.block.4.block.5.layers.3.attention.wqkv.weight": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "144",
+      "cpu",
+      3145728
+    ],
+    "offset": 0,
+    "shape": [
+      3072,
+      1024
+    ],
+    "stride": [
+      1024,
+      1
+    ]
+  },
+  "encoder.block.4.block.5.layers.3.attention.wo.weight": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "145",
+      "cpu",
+      1048576
+    ],
+    "offset": 0,
+    "shape": [
+      1024,
+      1024
+    ],
+    "stride": [
+      1024,
+      1
+    ]
+  },
+  "encoder.block.4.block.5.layers.3.feed_forward.w1.weight": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "146",
+      "cpu",
+      3145728
+    ],
+    "offset": 0,
+    "shape": [
+      3072,
+      1024
+    ],
+    "stride": [
+      1024,
+      1
+    ]
+  },
+  "encoder.block.4.block.5.layers.3.feed_forward.w3.weight": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "147",
+      "cpu",
+      3145728
+    ],
+    "offset": 0,
+    "shape": [
+      3072,
+      1024
+    ],
+    "stride": [
+      1024,
+      1
+    ]
+  },
+  "encoder.block.4.block.5.layers.3.feed_forward.w2.weight": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "148",
+      "cpu",
+      3145728
+    ],
+    "offset": 0,
+    "shape": [
+      1024,
+      3072
+    ],
+    "stride": [
+      3072,
+      1
+    ]
+  },
+  "encoder.block.4.block.5.layers.3.ffn_norm.weight": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "149",
+      "cpu",
+      1024
+    ],
+    "offset": 0,
+    "shape": [
+      1024
+    ],
+    "stride": [
+      1
+    ]
+  },
+  "encoder.block.4.block.5.layers.3.attention_norm.weight": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "150",
+      "cpu",
+      1024
+    ],
+    "offset": 0,
+    "shape": [
+      1024
+    ],
+    "stride": [
+      1
+    ]
+  },
+  "encoder.block.4.block.5.layers.3.attention_layer_scale.gamma": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "151",
+      "cpu",
+      1024
+    ],
+    "offset": 0,
+    "shape": [
+      1024
+    ],
+    "stride": [
+      1
+    ]
+  },
+  "encoder.block.4.block.5.layers.3.ffn_layer_scale.gamma": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "152",
+      "cpu",
+      1024
+    ],
+    "offset": 0,
+    "shape": [
+      1024
+    ],
+    "stride": [
+      1
+    ]
+  },
+  "encoder.block.4.block.5.norm.weight": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "153",
+      "cpu",
+      1024
+    ],
+    "offset": 0,
+    "shape": [
+      1024
+    ],
+    "stride": [
+      1
+    ]
+  },
+  "encoder.block.5.alpha": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "154",
+      "cpu",
+      1024
+    ],
+    "offset": 0,
+    "shape": [
+      1,
+      1024,
+      1
+    ],
+    "stride": [
+      1024,
+      1,
+      1
+    ]
+  },
+  "encoder.block.6.conv.bias": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "155",
+      "cpu",
+      1024
+    ],
+    "offset": 0,
+    "shape": [
+      1024
+    ],
+    "stride": [
+      1
+    ]
+  },
+  "encoder.block.6.conv.parametrizations.weight.original0": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "156",
+      "cpu",
+      1024
+    ],
+    "offset": 0,
+    "shape": [
+      1024,
+      1,
+      1
+    ],
+    "stride": [
+      1,
+      1,
+      1
+    ]
+  },
+  "encoder.block.6.conv.parametrizations.weight.original1": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "157",
+      "cpu",
+      3145728
+    ],
+    "offset": 0,
+    "shape": [
+      1024,
+      1024,
+      3
+    ],
+    "stride": [
+      3072,
+      3,
+      1
+    ]
+  },
+  "quantizer.semantic_quantizer.quantizers.0.in_proj.bias": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "158",
+      "cpu",
+      8
+    ],
+    "offset": 0,
+    "shape": [
+      8
+    ],
+    "stride": [
+      1
+    ]
+  },
+  "quantizer.semantic_quantizer.quantizers.0.in_proj.weight_g": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "159",
+      "cpu",
+      8
+    ],
+    "offset": 0,
+    "shape": [
+      8,
+      1,
+      1
+    ],
+    "stride": [
+      1,
+      1,
+      1
+    ]
+  },
+  "quantizer.semantic_quantizer.quantizers.0.in_proj.weight_v": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "160",
+      "cpu",
+      8192
+    ],
+    "offset": 0,
+    "shape": [
+      8,
+      1024,
+      1
+    ],
+    "stride": [
+      1024,
+      1,
+      1
+    ]
+  },
+  "quantizer.semantic_quantizer.quantizers.0.out_proj.bias": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "161",
+      "cpu",
+      1024
+    ],
+    "offset": 0,
+    "shape": [
+      1024
+    ],
+    "stride": [
+      1
+    ]
+  },
+  "quantizer.semantic_quantizer.quantizers.0.out_proj.weight_g": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "162",
+      "cpu",
+      1024
+    ],
+    "offset": 0,
+    "shape": [
+      1024,
+      1,
+      1
+    ],
+    "stride": [
+      1,
+      1,
+      1
+    ]
+  },
+  "quantizer.semantic_quantizer.quantizers.0.out_proj.weight_v": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "163",
+      "cpu",
+      8192
+    ],
+    "offset": 0,
+    "shape": [
+      1024,
+      8,
+      1
+    ],
+    "stride": [
+      8,
+      1,
+      1
+    ]
+  },
+  "quantizer.semantic_quantizer.quantizers.0.codebook.weight": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "164",
+      "cpu",
+      32768
+    ],
+    "offset": 0,
+    "shape": [
+      4096,
+      8
+    ],
+    "stride": [
+      8,
+      1
+    ]
+  },
+  "quantizer.quantizer.quantizers.0.in_proj.bias": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "165",
+      "cpu",
+      8
+    ],
+    "offset": 0,
+    "shape": [
+      8
+    ],
+    "stride": [
+      1
+    ]
+  },
+  "quantizer.quantizer.quantizers.0.in_proj.weight_g": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "166",
+      "cpu",
+      8
+    ],
+    "offset": 0,
+    "shape": [
+      8,
+      1,
+      1
+    ],
+    "stride": [
+      1,
+      1,
+      1
+    ]
+  },
+  "quantizer.quantizer.quantizers.0.in_proj.weight_v": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "167",
+      "cpu",
+      8192
+    ],
+    "offset": 0,
+    "shape": [
+      8,
+      1024,
+      1
+    ],
+    "stride": [
+      1024,
+      1,
+      1
+    ]
+  },
+  "quantizer.quantizer.quantizers.0.out_proj.bias": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "168",
+      "cpu",
+      1024
+    ],
+    "offset": 0,
+    "shape": [
+      1024
+    ],
+    "stride": [
+      1
+    ]
+  },
+  "quantizer.quantizer.quantizers.0.out_proj.weight_g": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "169",
+      "cpu",
+      1024
+    ],
+    "offset": 0,
+    "shape": [
+      1024,
+      1,
+      1
+    ],
+    "stride": [
+      1,
+      1,
+      1
+    ]
+  },
+  "quantizer.quantizer.quantizers.0.out_proj.weight_v": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "170",
+      "cpu",
+      8192
+    ],
+    "offset": 0,
+    "shape": [
+      1024,
+      8,
+      1
+    ],
+    "stride": [
+      8,
+      1,
+      1
+    ]
+  },
+  "quantizer.quantizer.quantizers.0.codebook.weight": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "171",
+      "cpu",
+      8192
+    ],
+    "offset": 0,
+    "shape": [
+      1024,
+      8
+    ],
+    "stride": [
+      8,
+      1
+    ]
+  },
+  "quantizer.quantizer.quantizers.1.in_proj.bias": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "172",
+      "cpu",
+      8
+    ],
+    "offset": 0,
+    "shape": [
+      8
+    ],
+    "stride": [
+      1
+    ]
+  },
+  "quantizer.quantizer.quantizers.1.in_proj.weight_g": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "173",
+      "cpu",
+      8
+    ],
+    "offset": 0,
+    "shape": [
+      8,
+      1,
+      1
+    ],
+    "stride": [
+      1,
+      1,
+      1
+    ]
+  },
+  "quantizer.quantizer.quantizers.1.in_proj.weight_v": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "174",
+      "cpu",
+      8192
+    ],
+    "offset": 0,
+    "shape": [
+      8,
+      1024,
+      1
+    ],
+    "stride": [
+      1024,
+      1,
+      1
+    ]
+  },
+  "quantizer.quantizer.quantizers.1.out_proj.bias": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "175",
+      "cpu",
+      1024
+    ],
+    "offset": 0,
+    "shape": [
+      1024
+    ],
+    "stride": [
+      1
+    ]
+  },
+  "quantizer.quantizer.quantizers.1.out_proj.weight_g": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "176",
+      "cpu",
+      1024
+    ],
+    "offset": 0,
+    "shape": [
+      1024,
+      1,
+      1
+    ],
+    "stride": [
+      1,
+      1,
+      1
+    ]
+  },
+  "quantizer.quantizer.quantizers.1.out_proj.weight_v": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "177",
+      "cpu",
+      8192
+    ],
+    "offset": 0,
+    "shape": [
+      1024,
+      8,
+      1
+    ],
+    "stride": [
+      8,
+      1,
+      1
+    ]
+  },
+  "quantizer.quantizer.quantizers.1.codebook.weight": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "178",
+      "cpu",
+      8192
+    ],
+    "offset": 0,
+    "shape": [
+      1024,
+      8
+    ],
+    "stride": [
+      8,
+      1
+    ]
+  },
+  "quantizer.quantizer.quantizers.2.in_proj.bias": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "179",
+      "cpu",
+      8
+    ],
+    "offset": 0,
+    "shape": [
+      8
+    ],
+    "stride": [
+      1
+    ]
+  },
+  "quantizer.quantizer.quantizers.2.in_proj.weight_g": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "180",
+      "cpu",
+      8
+    ],
+    "offset": 0,
+    "shape": [
+      8,
+      1,
+      1
+    ],
+    "stride": [
+      1,
+      1,
+      1
+    ]
+  },
+  "quantizer.quantizer.quantizers.2.in_proj.weight_v": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "181",
+      "cpu",
+      8192
+    ],
+    "offset": 0,
+    "shape": [
+      8,
+      1024,
+      1
+    ],
+    "stride": [
+      1024,
+      1,
+      1
+    ]
+  },
+  "quantizer.quantizer.quantizers.2.out_proj.bias": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "182",
+      "cpu",
+      1024
+    ],
+    "offset": 0,
+    "shape": [
+      1024
+    ],
+    "stride": [
+      1
+    ]
+  },
+  "quantizer.quantizer.quantizers.2.out_proj.weight_g": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "183",
+      "cpu",
+      1024
+    ],
+    "offset": 0,
+    "shape": [
+      1024,
+      1,
+      1
+    ],
+    "stride": [
+      1,
+      1,
+      1
+    ]
+  },
+  "quantizer.quantizer.quantizers.2.out_proj.weight_v": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "184",
+      "cpu",
+      8192
+    ],
+    "offset": 0,
+    "shape": [
+      1024,
+      8,
+      1
+    ],
+    "stride": [
+      8,
+      1,
+      1
+    ]
+  },
+  "quantizer.quantizer.quantizers.2.codebook.weight": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "185",
+      "cpu",
+      8192
+    ],
+    "offset": 0,
+    "shape": [
+      1024,
+      8
+    ],
+    "stride": [
+      8,
+      1
+    ]
+  },
+  "quantizer.quantizer.quantizers.3.in_proj.bias": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "186",
+      "cpu",
+      8
+    ],
+    "offset": 0,
+    "shape": [
+      8
+    ],
+    "stride": [
+      1
+    ]
+  },
+  "quantizer.quantizer.quantizers.3.in_proj.weight_g": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "187",
+      "cpu",
+      8
+    ],
+    "offset": 0,
+    "shape": [
+      8,
+      1,
+      1
+    ],
+    "stride": [
+      1,
+      1,
+      1
+    ]
+  },
+  "quantizer.quantizer.quantizers.3.in_proj.weight_v": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "188",
+      "cpu",
+      8192
+    ],
+    "offset": 0,
+    "shape": [
+      8,
+      1024,
+      1
+    ],
+    "stride": [
+      1024,
+      1,
+      1
+    ]
+  },
+  "quantizer.quantizer.quantizers.3.out_proj.bias": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "189",
+      "cpu",
+      1024
+    ],
+    "offset": 0,
+    "shape": [
+      1024
+    ],
+    "stride": [
+      1
+    ]
+  },
+  "quantizer.quantizer.quantizers.3.out_proj.weight_g": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "190",
+      "cpu",
+      1024
+    ],
+    "offset": 0,
+    "shape": [
+      1024,
+      1,
+      1
+    ],
+    "stride": [
+      1,
+      1,
+      1
+    ]
+  },
+  "quantizer.quantizer.quantizers.3.out_proj.weight_v": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "191",
+      "cpu",
+      8192
+    ],
+    "offset": 0,
+    "shape": [
+      1024,
+      8,
+      1
+    ],
+    "stride": [
+      8,
+      1,
+      1
+    ]
+  },
+  "quantizer.quantizer.quantizers.3.codebook.weight": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "192",
+      "cpu",
+      8192
+    ],
+    "offset": 0,
+    "shape": [
+      1024,
+      8
+    ],
+    "stride": [
+      8,
+      1
+    ]
+  },
+  "quantizer.quantizer.quantizers.4.in_proj.bias": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "193",
+      "cpu",
+      8
+    ],
+    "offset": 0,
+    "shape": [
+      8
+    ],
+    "stride": [
+      1
+    ]
+  },
+  "quantizer.quantizer.quantizers.4.in_proj.weight_g": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "194",
+      "cpu",
+      8
+    ],
+    "offset": 0,
+    "shape": [
+      8,
+      1,
+      1
+    ],
+    "stride": [
+      1,
+      1,
+      1
+    ]
+  },
+  "quantizer.quantizer.quantizers.4.in_proj.weight_v": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "195",
+      "cpu",
+      8192
+    ],
+    "offset": 0,
+    "shape": [
+      8,
+      1024,
+      1
+    ],
+    "stride": [
+      1024,
+      1,
+      1
+    ]
+  },
+  "quantizer.quantizer.quantizers.4.out_proj.bias": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "196",
+      "cpu",
+      1024
+    ],
+    "offset": 0,
+    "shape": [
+      1024
+    ],
+    "stride": [
+      1
+    ]
+  },
+  "quantizer.quantizer.quantizers.4.out_proj.weight_g": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "197",
+      "cpu",
+      1024
+    ],
+    "offset": 0,
+    "shape": [
+      1024,
+      1,
+      1
+    ],
+    "stride": [
+      1,
+      1,
+      1
+    ]
+  },
+  "quantizer.quantizer.quantizers.4.out_proj.weight_v": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "198",
+      "cpu",
+      8192
+    ],
+    "offset": 0,
+    "shape": [
+      1024,
+      8,
+      1
+    ],
+    "stride": [
+      8,
+      1,
+      1
+    ]
+  },
+  "quantizer.quantizer.quantizers.4.codebook.weight": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "199",
+      "cpu",
+      8192
+    ],
+    "offset": 0,
+    "shape": [
+      1024,
+      8
+    ],
+    "stride": [
+      8,
+      1
+    ]
+  },
+  "quantizer.quantizer.quantizers.5.in_proj.bias": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "200",
+      "cpu",
+      8
+    ],
+    "offset": 0,
+    "shape": [
+      8
+    ],
+    "stride": [
+      1
+    ]
+  },
+  "quantizer.quantizer.quantizers.5.in_proj.weight_g": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "201",
+      "cpu",
+      8
+    ],
+    "offset": 0,
+    "shape": [
+      8,
+      1,
+      1
+    ],
+    "stride": [
+      1,
+      1,
+      1
+    ]
+  },
+  "quantizer.quantizer.quantizers.5.in_proj.weight_v": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "202",
+      "cpu",
+      8192
+    ],
+    "offset": 0,
+    "shape": [
+      8,
+      1024,
+      1
+    ],
+    "stride": [
+      1024,
+      1,
+      1
+    ]
+  },
+  "quantizer.quantizer.quantizers.5.out_proj.bias": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "203",
+      "cpu",
+      1024
+    ],
+    "offset": 0,
+    "shape": [
+      1024
+    ],
+    "stride": [
+      1
+    ]
+  },
+  "quantizer.quantizer.quantizers.5.out_proj.weight_g": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "204",
+      "cpu",
+      1024
+    ],
+    "offset": 0,
+    "shape": [
+      1024,
+      1,
+      1
+    ],
+    "stride": [
+      1,
+      1,
+      1
+    ]
+  },
+  "quantizer.quantizer.quantizers.5.out_proj.weight_v": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "205",
+      "cpu",
+      8192
+    ],
+    "offset": 0,
+    "shape": [
+      1024,
+      8,
+      1
+    ],
+    "stride": [
+      8,
+      1,
+      1
+    ]
+  },
+  "quantizer.quantizer.quantizers.5.codebook.weight": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "206",
+      "cpu",
+      8192
+    ],
+    "offset": 0,
+    "shape": [
+      1024,
+      8
+    ],
+    "stride": [
+      8,
+      1
+    ]
+  },
+  "quantizer.quantizer.quantizers.6.in_proj.bias": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "207",
+      "cpu",
+      8
+    ],
+    "offset": 0,
+    "shape": [
+      8
+    ],
+    "stride": [
+      1
+    ]
+  },
+  "quantizer.quantizer.quantizers.6.in_proj.weight_g": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "208",
+      "cpu",
+      8
+    ],
+    "offset": 0,
+    "shape": [
+      8,
+      1,
+      1
+    ],
+    "stride": [
+      1,
+      1,
+      1
+    ]
+  },
+  "quantizer.quantizer.quantizers.6.in_proj.weight_v": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "209",
+      "cpu",
+      8192
+    ],
+    "offset": 0,
+    "shape": [
+      8,
+      1024,
+      1
+    ],
+    "stride": [
+      1024,
+      1,
+      1
+    ]
+  },
+  "quantizer.quantizer.quantizers.6.out_proj.bias": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "210",
+      "cpu",
+      1024
+    ],
+    "offset": 0,
+    "shape": [
+      1024
+    ],
+    "stride": [
+      1
+    ]
+  },
+  "quantizer.quantizer.quantizers.6.out_proj.weight_g": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "211",
+      "cpu",
+      1024
+    ],
+    "offset": 0,
+    "shape": [
+      1024,
+      1,
+      1
+    ],
+    "stride": [
+      1,
+      1,
+      1
+    ]
+  },
+  "quantizer.quantizer.quantizers.6.out_proj.weight_v": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "212",
+      "cpu",
+      8192
+    ],
+    "offset": 0,
+    "shape": [
+      1024,
+      8,
+      1
+    ],
+    "stride": [
+      8,
+      1,
+      1
+    ]
+  },
+  "quantizer.quantizer.quantizers.6.codebook.weight": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "213",
+      "cpu",
+      8192
+    ],
+    "offset": 0,
+    "shape": [
+      1024,
+      8
+    ],
+    "stride": [
+      8,
+      1
+    ]
+  },
+  "quantizer.quantizer.quantizers.7.in_proj.bias": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "214",
+      "cpu",
+      8
+    ],
+    "offset": 0,
+    "shape": [
+      8
+    ],
+    "stride": [
+      1
+    ]
+  },
+  "quantizer.quantizer.quantizers.7.in_proj.weight_g": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "215",
+      "cpu",
+      8
+    ],
+    "offset": 0,
+    "shape": [
+      8,
+      1,
+      1
+    ],
+    "stride": [
+      1,
+      1,
+      1
+    ]
+  },
+  "quantizer.quantizer.quantizers.7.in_proj.weight_v": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "216",
+      "cpu",
+      8192
+    ],
+    "offset": 0,
+    "shape": [
+      8,
+      1024,
+      1
+    ],
+    "stride": [
+      1024,
+      1,
+      1
+    ]
+  },
+  "quantizer.quantizer.quantizers.7.out_proj.bias": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "217",
+      "cpu",
+      1024
+    ],
+    "offset": 0,
+    "shape": [
+      1024
+    ],
+    "stride": [
+      1
+    ]
+  },
+  "quantizer.quantizer.quantizers.7.out_proj.weight_g": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "218",
+      "cpu",
+      1024
+    ],
+    "offset": 0,
+    "shape": [
+      1024,
+      1,
+      1
+    ],
+    "stride": [
+      1,
+      1,
+      1
+    ]
+  },
+  "quantizer.quantizer.quantizers.7.out_proj.weight_v": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "219",
+      "cpu",
+      8192
+    ],
+    "offset": 0,
+    "shape": [
+      1024,
+      8,
+      1
+    ],
+    "stride": [
+      8,
+      1,
+      1
+    ]
+  },
+  "quantizer.quantizer.quantizers.7.codebook.weight": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "220",
+      "cpu",
+      8192
+    ],
+    "offset": 0,
+    "shape": [
+      1024,
+      8
+    ],
+    "stride": [
+      8,
+      1
+    ]
+  },
+  "quantizer.quantizer.quantizers.8.in_proj.bias": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "221",
+      "cpu",
+      8
+    ],
+    "offset": 0,
+    "shape": [
+      8
+    ],
+    "stride": [
+      1
+    ]
+  },
+  "quantizer.quantizer.quantizers.8.in_proj.weight_g": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "222",
+      "cpu",
+      8
+    ],
+    "offset": 0,
+    "shape": [
+      8,
+      1,
+      1
+    ],
+    "stride": [
+      1,
+      1,
+      1
+    ]
+  },
+  "quantizer.quantizer.quantizers.8.in_proj.weight_v": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "223",
+      "cpu",
+      8192
+    ],
+    "offset": 0,
+    "shape": [
+      8,
+      1024,
+      1
+    ],
+    "stride": [
+      1024,
+      1,
+      1
+    ]
+  },
+  "quantizer.quantizer.quantizers.8.out_proj.bias": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "224",
+      "cpu",
+      1024
+    ],
+    "offset": 0,
+    "shape": [
+      1024
+    ],
+    "stride": [
+      1
+    ]
+  },
+  "quantizer.quantizer.quantizers.8.out_proj.weight_g": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "225",
+      "cpu",
+      1024
+    ],
+    "offset": 0,
+    "shape": [
+      1024,
+      1,
+      1
+    ],
+    "stride": [
+      1,
+      1,
+      1
+    ]
+  },
+  "quantizer.quantizer.quantizers.8.out_proj.weight_v": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "226",
+      "cpu",
+      8192
+    ],
+    "offset": 0,
+    "shape": [
+      1024,
+      8,
+      1
+    ],
+    "stride": [
+      8,
+      1,
+      1
+    ]
+  },
+  "quantizer.quantizer.quantizers.8.codebook.weight": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "227",
+      "cpu",
+      8192
+    ],
+    "offset": 0,
+    "shape": [
+      1024,
+      8
+    ],
+    "stride": [
+      8,
+      1
+    ]
+  },
+  "quantizer.downsample.0.0.conv.weight": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "228",
+      "cpu",
+      2097152
+    ],
+    "offset": 0,
+    "shape": [
+      1024,
+      1024,
+      2
+    ],
+    "stride": [
+      2048,
+      2,
+      1
+    ]
+  },
+  "quantizer.downsample.0.0.conv.bias": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "229",
+      "cpu",
+      1024
+    ],
+    "offset": 0,
+    "shape": [
+      1024
+    ],
+    "stride": [
+      1
+    ]
+  },
+  "quantizer.downsample.0.1.gamma": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "230",
+      "cpu",
+      1024
+    ],
+    "offset": 0,
+    "shape": [
+      1024
+    ],
+    "stride": [
+      1
+    ]
+  },
+  "quantizer.downsample.0.1.dwconv.conv.weight": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "231",
+      "cpu",
+      7168
+    ],
+    "offset": 0,
+    "shape": [
+      1024,
+      1,
+      7
+    ],
+    "stride": [
+      7,
+      7,
+      1
+    ]
+  },
+  "quantizer.downsample.0.1.dwconv.conv.bias": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "232",
+      "cpu",
+      1024
+    ],
+    "offset": 0,
+    "shape": [
+      1024
+    ],
+    "stride": [
+      1
+    ]
+  },
+  "quantizer.downsample.0.1.norm.weight": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "233",
+      "cpu",
+      1024
+    ],
+    "offset": 0,
+    "shape": [
+      1024
+    ],
+    "stride": [
+      1
+    ]
+  },
+  "quantizer.downsample.0.1.norm.bias": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "234",
+      "cpu",
+      1024
+    ],
+    "offset": 0,
+    "shape": [
+      1024
+    ],
+    "stride": [
+      1
+    ]
+  },
+  "quantizer.downsample.0.1.pwconv1.weight": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "235",
+      "cpu",
+      4194304
+    ],
+    "offset": 0,
+    "shape": [
+      4096,
+      1024
+    ],
+    "stride": [
+      1024,
+      1
+    ]
+  },
+  "quantizer.downsample.0.1.pwconv1.bias": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "236",
+      "cpu",
+      4096
+    ],
+    "offset": 0,
+    "shape": [
+      4096
+    ],
+    "stride": [
+      1
+    ]
+  },
+  "quantizer.downsample.0.1.pwconv2.weight": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "237",
+      "cpu",
+      4194304
+    ],
+    "offset": 0,
+    "shape": [
+      1024,
+      4096
+    ],
+    "stride": [
+      4096,
+      1
+    ]
+  },
+  "quantizer.downsample.0.1.pwconv2.bias": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "238",
+      "cpu",
+      1024
+    ],
+    "offset": 0,
+    "shape": [
+      1024
+    ],
+    "stride": [
+      1
+    ]
+  },
+  "quantizer.downsample.1.0.conv.weight": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "239",
+      "cpu",
+      2097152
+    ],
+    "offset": 0,
+    "shape": [
+      1024,
+      1024,
+      2
+    ],
+    "stride": [
+      2048,
+      2,
+      1
+    ]
+  },
+  "quantizer.downsample.1.0.conv.bias": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "240",
+      "cpu",
+      1024
+    ],
+    "offset": 0,
+    "shape": [
+      1024
+    ],
+    "stride": [
+      1
+    ]
+  },
+  "quantizer.downsample.1.1.gamma": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "241",
+      "cpu",
+      1024
+    ],
+    "offset": 0,
+    "shape": [
+      1024
+    ],
+    "stride": [
+      1
+    ]
+  },
+  "quantizer.downsample.1.1.dwconv.conv.weight": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "242",
+      "cpu",
+      7168
+    ],
+    "offset": 0,
+    "shape": [
+      1024,
+      1,
+      7
+    ],
+    "stride": [
+      7,
+      7,
+      1
+    ]
+  },
+  "quantizer.downsample.1.1.dwconv.conv.bias": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "243",
+      "cpu",
+      1024
+    ],
+    "offset": 0,
+    "shape": [
+      1024
+    ],
+    "stride": [
+      1
+    ]
+  },
+  "quantizer.downsample.1.1.norm.weight": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "244",
+      "cpu",
+      1024
+    ],
+    "offset": 0,
+    "shape": [
+      1024
+    ],
+    "stride": [
+      1
+    ]
+  },
+  "quantizer.downsample.1.1.norm.bias": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "245",
+      "cpu",
+      1024
+    ],
+    "offset": 0,
+    "shape": [
+      1024
+    ],
+    "stride": [
+      1
+    ]
+  },
+  "quantizer.downsample.1.1.pwconv1.weight": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "246",
+      "cpu",
+      4194304
+    ],
+    "offset": 0,
+    "shape": [
+      4096,
+      1024
+    ],
+    "stride": [
+      1024,
+      1
+    ]
+  },
+  "quantizer.downsample.1.1.pwconv1.bias": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "247",
+      "cpu",
+      4096
+    ],
+    "offset": 0,
+    "shape": [
+      4096
+    ],
+    "stride": [
+      1
+    ]
+  },
+  "quantizer.downsample.1.1.pwconv2.weight": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "248",
+      "cpu",
+      4194304
+    ],
+    "offset": 0,
+    "shape": [
+      1024,
+      4096
+    ],
+    "stride": [
+      4096,
+      1
+    ]
+  },
+  "quantizer.downsample.1.1.pwconv2.bias": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "249",
+      "cpu",
+      1024
+    ],
+    "offset": 0,
+    "shape": [
+      1024
+    ],
+    "stride": [
+      1
+    ]
+  },
+  "quantizer.upsample.0.0.conv.weight": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "250",
+      "cpu",
+      2097152
+    ],
+    "offset": 0,
+    "shape": [
+      1024,
+      1024,
+      2
+    ],
+    "stride": [
+      2048,
+      2,
+      1
+    ]
+  },
+  "quantizer.upsample.0.0.conv.bias": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "251",
+      "cpu",
+      1024
+    ],
+    "offset": 0,
+    "shape": [
+      1024
+    ],
+    "stride": [
+      1
+    ]
+  },
+  "quantizer.upsample.0.1.gamma": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "252",
+      "cpu",
+      1024
+    ],
+    "offset": 0,
+    "shape": [
+      1024
+    ],
+    "stride": [
+      1
+    ]
+  },
+  "quantizer.upsample.0.1.dwconv.conv.weight": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "253",
+      "cpu",
+      7168
+    ],
+    "offset": 0,
+    "shape": [
+      1024,
+      1,
+      7
+    ],
+    "stride": [
+      7,
+      7,
+      1
+    ]
+  },
+  "quantizer.upsample.0.1.dwconv.conv.bias": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "254",
+      "cpu",
+      1024
+    ],
+    "offset": 0,
+    "shape": [
+      1024
+    ],
+    "stride": [
+      1
+    ]
+  },
+  "quantizer.upsample.0.1.norm.weight": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "255",
+      "cpu",
+      1024
+    ],
+    "offset": 0,
+    "shape": [
+      1024
+    ],
+    "stride": [
+      1
+    ]
+  },
+  "quantizer.upsample.0.1.norm.bias": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "256",
+      "cpu",
+      1024
+    ],
+    "offset": 0,
+    "shape": [
+      1024
+    ],
+    "stride": [
+      1
+    ]
+  },
+  "quantizer.upsample.0.1.pwconv1.weight": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "257",
+      "cpu",
+      4194304
+    ],
+    "offset": 0,
+    "shape": [
+      4096,
+      1024
+    ],
+    "stride": [
+      1024,
+      1
+    ]
+  },
+  "quantizer.upsample.0.1.pwconv1.bias": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "258",
+      "cpu",
+      4096
+    ],
+    "offset": 0,
+    "shape": [
+      4096
+    ],
+    "stride": [
+      1
+    ]
+  },
+  "quantizer.upsample.0.1.pwconv2.weight": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "259",
+      "cpu",
+      4194304
+    ],
+    "offset": 0,
+    "shape": [
+      1024,
+      4096
+    ],
+    "stride": [
+      4096,
+      1
+    ]
+  },
+  "quantizer.upsample.0.1.pwconv2.bias": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "260",
+      "cpu",
+      1024
+    ],
+    "offset": 0,
+    "shape": [
+      1024
+    ],
+    "stride": [
+      1
+    ]
+  },
+  "quantizer.upsample.1.0.conv.weight": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "261",
+      "cpu",
+      2097152
+    ],
+    "offset": 0,
+    "shape": [
+      1024,
+      1024,
+      2
+    ],
+    "stride": [
+      2048,
+      2,
+      1
+    ]
+  },
+  "quantizer.upsample.1.0.conv.bias": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "262",
+      "cpu",
+      1024
+    ],
+    "offset": 0,
+    "shape": [
+      1024
+    ],
+    "stride": [
+      1
+    ]
+  },
+  "quantizer.upsample.1.1.gamma": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "263",
+      "cpu",
+      1024
+    ],
+    "offset": 0,
+    "shape": [
+      1024
+    ],
+    "stride": [
+      1
+    ]
+  },
+  "quantizer.upsample.1.1.dwconv.conv.weight": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "264",
+      "cpu",
+      7168
+    ],
+    "offset": 0,
+    "shape": [
+      1024,
+      1,
+      7
+    ],
+    "stride": [
+      7,
+      7,
+      1
+    ]
+  },
+  "quantizer.upsample.1.1.dwconv.conv.bias": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "265",
+      "cpu",
+      1024
+    ],
+    "offset": 0,
+    "shape": [
+      1024
+    ],
+    "stride": [
+      1
+    ]
+  },
+  "quantizer.upsample.1.1.norm.weight": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "266",
+      "cpu",
+      1024
+    ],
+    "offset": 0,
+    "shape": [
+      1024
+    ],
+    "stride": [
+      1
+    ]
+  },
+  "quantizer.upsample.1.1.norm.bias": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "267",
+      "cpu",
+      1024
+    ],
+    "offset": 0,
+    "shape": [
+      1024
+    ],
+    "stride": [
+      1
+    ]
+  },
+  "quantizer.upsample.1.1.pwconv1.weight": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "268",
+      "cpu",
+      4194304
+    ],
+    "offset": 0,
+    "shape": [
+      4096,
+      1024
+    ],
+    "stride": [
+      1024,
+      1
+    ]
+  },
+  "quantizer.upsample.1.1.pwconv1.bias": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "269",
+      "cpu",
+      4096
+    ],
+    "offset": 0,
+    "shape": [
+      4096
+    ],
+    "stride": [
+      1
+    ]
+  },
+  "quantizer.upsample.1.1.pwconv2.weight": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "270",
+      "cpu",
+      4194304
+    ],
+    "offset": 0,
+    "shape": [
+      1024,
+      4096
+    ],
+    "stride": [
+      4096,
+      1
+    ]
+  },
+  "quantizer.upsample.1.1.pwconv2.bias": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "271",
+      "cpu",
+      1024
+    ],
+    "offset": 0,
+    "shape": [
+      1024
+    ],
+    "stride": [
+      1
+    ]
+  },
+  "quantizer.pre_module.freqs_cis": {
+    "storage": [
+      "storage",
+      "BFloat16Storage",
+      "272",
+      "cpu",
+      262144
+    ],
+    "offset": 0,
+    "shape": [
+      4096,
+      32,
+      2
+    ],
+    "stride": [
+      64,
+      2,
+      1
+    ]
+  },
+  "quantizer.pre_module.causal_mask": {
+    "storage": [
+      "storage",
+      "BoolStorage",
+      "273",
+      "cpu",
+      16777216
+    ],
+    "offset": 0,
+    "shape": [
+      4096,
+      4096
+    ],
+    "stride": [
+      4096,
+      1
+    ]
+  },
+  "quantizer.pre_module.layers.0.attention.wqkv.weight": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "274",
+      "cpu",
+      3145728
+    ],
+    "offset": 0,
+    "shape": [
+      3072,
+      1024
+    ],
+    "stride": [
+      1024,
+      1
+    ]
+  },
+  "quantizer.pre_module.layers.0.attention.wo.weight": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "275",
+      "cpu",
+      1048576
+    ],
+    "offset": 0,
+    "shape": [
+      1024,
+      1024
+    ],
+    "stride": [
+      1024,
+      1
+    ]
+  },
+  "quantizer.pre_module.layers.0.feed_forward.w1.weight": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "276",
+      "cpu",
+      3145728
+    ],
+    "offset": 0,
+    "shape": [
+      3072,
+      1024
+    ],
+    "stride": [
+      1024,
+      1
+    ]
+  },
+  "quantizer.pre_module.layers.0.feed_forward.w3.weight": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "277",
+      "cpu",
+      3145728
+    ],
+    "offset": 0,
+    "shape": [
+      3072,
+      1024
+    ],
+    "stride": [
+      1024,
+      1
+    ]
+  },
+  "quantizer.pre_module.layers.0.feed_forward.w2.weight": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "278",
+      "cpu",
+      3145728
+    ],
+    "offset": 0,
+    "shape": [
+      1024,
+      3072
+    ],
+    "stride": [
+      3072,
+      1
+    ]
+  },
+  "quantizer.pre_module.layers.0.ffn_norm.weight": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "279",
+      "cpu",
+      1024
+    ],
+    "offset": 0,
+    "shape": [
+      1024
+    ],
+    "stride": [
+      1
+    ]
+  },
+  "quantizer.pre_module.layers.0.attention_norm.weight": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "280",
+      "cpu",
+      1024
+    ],
+    "offset": 0,
+    "shape": [
+      1024
+    ],
+    "stride": [
+      1
+    ]
+  },
+  "quantizer.pre_module.layers.0.attention_layer_scale.gamma": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "281",
+      "cpu",
+      1024
+    ],
+    "offset": 0,
+    "shape": [
+      1024
+    ],
+    "stride": [
+      1
+    ]
+  },
+  "quantizer.pre_module.layers.0.ffn_layer_scale.gamma": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "282",
+      "cpu",
+      1024
+    ],
+    "offset": 0,
+    "shape": [
+      1024
+    ],
+    "stride": [
+      1
+    ]
+  },
+  "quantizer.pre_module.layers.1.attention.wqkv.weight": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "283",
+      "cpu",
+      3145728
+    ],
+    "offset": 0,
+    "shape": [
+      3072,
+      1024
+    ],
+    "stride": [
+      1024,
+      1
+    ]
+  },
+  "quantizer.pre_module.layers.1.attention.wo.weight": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "284",
+      "cpu",
+      1048576
+    ],
+    "offset": 0,
+    "shape": [
+      1024,
+      1024
+    ],
+    "stride": [
+      1024,
+      1
+    ]
+  },
+  "quantizer.pre_module.layers.1.feed_forward.w1.weight": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "285",
+      "cpu",
+      3145728
+    ],
+    "offset": 0,
+    "shape": [
+      3072,
+      1024
+    ],
+    "stride": [
+      1024,
+      1
+    ]
+  },
+  "quantizer.pre_module.layers.1.feed_forward.w3.weight": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "286",
+      "cpu",
+      3145728
+    ],
+    "offset": 0,
+    "shape": [
+      3072,
+      1024
+    ],
+    "stride": [
+      1024,
+      1
+    ]
+  },
+  "quantizer.pre_module.layers.1.feed_forward.w2.weight": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "287",
+      "cpu",
+      3145728
+    ],
+    "offset": 0,
+    "shape": [
+      1024,
+      3072
+    ],
+    "stride": [
+      3072,
+      1
+    ]
+  },
+  "quantizer.pre_module.layers.1.ffn_norm.weight": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "288",
+      "cpu",
+      1024
+    ],
+    "offset": 0,
+    "shape": [
+      1024
+    ],
+    "stride": [
+      1
+    ]
+  },
+  "quantizer.pre_module.layers.1.attention_norm.weight": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "289",
+      "cpu",
+      1024
+    ],
+    "offset": 0,
+    "shape": [
+      1024
+    ],
+    "stride": [
+      1
+    ]
+  },
+  "quantizer.pre_module.layers.1.attention_layer_scale.gamma": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "290",
+      "cpu",
+      1024
+    ],
+    "offset": 0,
+    "shape": [
+      1024
+    ],
+    "stride": [
+      1
+    ]
+  },
+  "quantizer.pre_module.layers.1.ffn_layer_scale.gamma": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "291",
+      "cpu",
+      1024
+    ],
+    "offset": 0,
+    "shape": [
+      1024
+    ],
+    "stride": [
+      1
+    ]
+  },
+  "quantizer.pre_module.layers.2.attention.wqkv.weight": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "292",
+      "cpu",
+      3145728
+    ],
+    "offset": 0,
+    "shape": [
+      3072,
+      1024
+    ],
+    "stride": [
+      1024,
+      1
+    ]
+  },
+  "quantizer.pre_module.layers.2.attention.wo.weight": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "293",
+      "cpu",
+      1048576
+    ],
+    "offset": 0,
+    "shape": [
+      1024,
+      1024
+    ],
+    "stride": [
+      1024,
+      1
+    ]
+  },
+  "quantizer.pre_module.layers.2.feed_forward.w1.weight": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "294",
+      "cpu",
+      3145728
+    ],
+    "offset": 0,
+    "shape": [
+      3072,
+      1024
+    ],
+    "stride": [
+      1024,
+      1
+    ]
+  },
+  "quantizer.pre_module.layers.2.feed_forward.w3.weight": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "295",
+      "cpu",
+      3145728
+    ],
+    "offset": 0,
+    "shape": [
+      3072,
+      1024
+    ],
+    "stride": [
+      1024,
+      1
+    ]
+  },
+  "quantizer.pre_module.layers.2.feed_forward.w2.weight": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "296",
+      "cpu",
+      3145728
+    ],
+    "offset": 0,
+    "shape": [
+      1024,
+      3072
+    ],
+    "stride": [
+      3072,
+      1
+    ]
+  },
+  "quantizer.pre_module.layers.2.ffn_norm.weight": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "297",
+      "cpu",
+      1024
+    ],
+    "offset": 0,
+    "shape": [
+      1024
+    ],
+    "stride": [
+      1
+    ]
+  },
+  "quantizer.pre_module.layers.2.attention_norm.weight": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "298",
+      "cpu",
+      1024
+    ],
+    "offset": 0,
+    "shape": [
+      1024
+    ],
+    "stride": [
+      1
+    ]
+  },
+  "quantizer.pre_module.layers.2.attention_layer_scale.gamma": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "299",
+      "cpu",
+      1024
+    ],
+    "offset": 0,
+    "shape": [
+      1024
+    ],
+    "stride": [
+      1
+    ]
+  },
+  "quantizer.pre_module.layers.2.ffn_layer_scale.gamma": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "300",
+      "cpu",
+      1024
+    ],
+    "offset": 0,
+    "shape": [
+      1024
+    ],
+    "stride": [
+      1
+    ]
+  },
+  "quantizer.pre_module.layers.3.attention.wqkv.weight": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "301",
+      "cpu",
+      3145728
+    ],
+    "offset": 0,
+    "shape": [
+      3072,
+      1024
+    ],
+    "stride": [
+      1024,
+      1
+    ]
+  },
+  "quantizer.pre_module.layers.3.attention.wo.weight": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "302",
+      "cpu",
+      1048576
+    ],
+    "offset": 0,
+    "shape": [
+      1024,
+      1024
+    ],
+    "stride": [
+      1024,
+      1
+    ]
+  },
+  "quantizer.pre_module.layers.3.feed_forward.w1.weight": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "303",
+      "cpu",
+      3145728
+    ],
+    "offset": 0,
+    "shape": [
+      3072,
+      1024
+    ],
+    "stride": [
+      1024,
+      1
+    ]
+  },
+  "quantizer.pre_module.layers.3.feed_forward.w3.weight": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "304",
+      "cpu",
+      3145728
+    ],
+    "offset": 0,
+    "shape": [
+      3072,
+      1024
+    ],
+    "stride": [
+      1024,
+      1
+    ]
+  },
+  "quantizer.pre_module.layers.3.feed_forward.w2.weight": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "305",
+      "cpu",
+      3145728
+    ],
+    "offset": 0,
+    "shape": [
+      1024,
+      3072
+    ],
+    "stride": [
+      3072,
+      1
+    ]
+  },
+  "quantizer.pre_module.layers.3.ffn_norm.weight": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "306",
+      "cpu",
+      1024
+    ],
+    "offset": 0,
+    "shape": [
+      1024
+    ],
+    "stride": [
+      1
+    ]
+  },
+  "quantizer.pre_module.layers.3.attention_norm.weight": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "307",
+      "cpu",
+      1024
+    ],
+    "offset": 0,
+    "shape": [
+      1024
+    ],
+    "stride": [
+      1
+    ]
+  },
+  "quantizer.pre_module.layers.3.attention_layer_scale.gamma": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "308",
+      "cpu",
+      1024
+    ],
+    "offset": 0,
+    "shape": [
+      1024
+    ],
+    "stride": [
+      1
+    ]
+  },
+  "quantizer.pre_module.layers.3.ffn_layer_scale.gamma": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "309",
+      "cpu",
+      1024
+    ],
+    "offset": 0,
+    "shape": [
+      1024
+    ],
+    "stride": [
+      1
+    ]
+  },
+  "quantizer.pre_module.layers.4.attention.wqkv.weight": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "310",
+      "cpu",
+      3145728
+    ],
+    "offset": 0,
+    "shape": [
+      3072,
+      1024
+    ],
+    "stride": [
+      1024,
+      1
+    ]
+  },
+  "quantizer.pre_module.layers.4.attention.wo.weight": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "311",
+      "cpu",
+      1048576
+    ],
+    "offset": 0,
+    "shape": [
+      1024,
+      1024
+    ],
+    "stride": [
+      1024,
+      1
+    ]
+  },
+  "quantizer.pre_module.layers.4.feed_forward.w1.weight": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "312",
+      "cpu",
+      3145728
+    ],
+    "offset": 0,
+    "shape": [
+      3072,
+      1024
+    ],
+    "stride": [
+      1024,
+      1
+    ]
+  },
+  "quantizer.pre_module.layers.4.feed_forward.w3.weight": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "313",
+      "cpu",
+      3145728
+    ],
+    "offset": 0,
+    "shape": [
+      3072,
+      1024
+    ],
+    "stride": [
+      1024,
+      1
+    ]
+  },
+  "quantizer.pre_module.layers.4.feed_forward.w2.weight": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "314",
+      "cpu",
+      3145728
+    ],
+    "offset": 0,
+    "shape": [
+      1024,
+      3072
+    ],
+    "stride": [
+      3072,
+      1
+    ]
+  },
+  "quantizer.pre_module.layers.4.ffn_norm.weight": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "315",
+      "cpu",
+      1024
+    ],
+    "offset": 0,
+    "shape": [
+      1024
+    ],
+    "stride": [
+      1
+    ]
+  },
+  "quantizer.pre_module.layers.4.attention_norm.weight": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "316",
+      "cpu",
+      1024
+    ],
+    "offset": 0,
+    "shape": [
+      1024
+    ],
+    "stride": [
+      1
+    ]
+  },
+  "quantizer.pre_module.layers.4.attention_layer_scale.gamma": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "317",
+      "cpu",
+      1024
+    ],
+    "offset": 0,
+    "shape": [
+      1024
+    ],
+    "stride": [
+      1
+    ]
+  },
+  "quantizer.pre_module.layers.4.ffn_layer_scale.gamma": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "318",
+      "cpu",
+      1024
+    ],
+    "offset": 0,
+    "shape": [
+      1024
+    ],
+    "stride": [
+      1
+    ]
+  },
+  "quantizer.pre_module.layers.5.attention.wqkv.weight": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "319",
+      "cpu",
+      3145728
+    ],
+    "offset": 0,
+    "shape": [
+      3072,
+      1024
+    ],
+    "stride": [
+      1024,
+      1
+    ]
+  },
+  "quantizer.pre_module.layers.5.attention.wo.weight": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "320",
+      "cpu",
+      1048576
+    ],
+    "offset": 0,
+    "shape": [
+      1024,
+      1024
+    ],
+    "stride": [
+      1024,
+      1
+    ]
+  },
+  "quantizer.pre_module.layers.5.feed_forward.w1.weight": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "321",
+      "cpu",
+      3145728
+    ],
+    "offset": 0,
+    "shape": [
+      3072,
+      1024
+    ],
+    "stride": [
+      1024,
+      1
+    ]
+  },
+  "quantizer.pre_module.layers.5.feed_forward.w3.weight": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "322",
+      "cpu",
+      3145728
+    ],
+    "offset": 0,
+    "shape": [
+      3072,
+      1024
+    ],
+    "stride": [
+      1024,
+      1
+    ]
+  },
+  "quantizer.pre_module.layers.5.feed_forward.w2.weight": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "323",
+      "cpu",
+      3145728
+    ],
+    "offset": 0,
+    "shape": [
+      1024,
+      3072
+    ],
+    "stride": [
+      3072,
+      1
+    ]
+  },
+  "quantizer.pre_module.layers.5.ffn_norm.weight": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "324",
+      "cpu",
+      1024
+    ],
+    "offset": 0,
+    "shape": [
+      1024
+    ],
+    "stride": [
+      1
+    ]
+  },
+  "quantizer.pre_module.layers.5.attention_norm.weight": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "325",
+      "cpu",
+      1024
+    ],
+    "offset": 0,
+    "shape": [
+      1024
+    ],
+    "stride": [
+      1
+    ]
+  },
+  "quantizer.pre_module.layers.5.attention_layer_scale.gamma": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "326",
+      "cpu",
+      1024
+    ],
+    "offset": 0,
+    "shape": [
+      1024
+    ],
+    "stride": [
+      1
+    ]
+  },
+  "quantizer.pre_module.layers.5.ffn_layer_scale.gamma": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "327",
+      "cpu",
+      1024
+    ],
+    "offset": 0,
+    "shape": [
+      1024
+    ],
+    "stride": [
+      1
+    ]
+  },
+  "quantizer.pre_module.layers.6.attention.wqkv.weight": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "328",
+      "cpu",
+      3145728
+    ],
+    "offset": 0,
+    "shape": [
+      3072,
+      1024
+    ],
+    "stride": [
+      1024,
+      1
+    ]
+  },
+  "quantizer.pre_module.layers.6.attention.wo.weight": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "329",
+      "cpu",
+      1048576
+    ],
+    "offset": 0,
+    "shape": [
+      1024,
+      1024
+    ],
+    "stride": [
+      1024,
+      1
+    ]
+  },
+  "quantizer.pre_module.layers.6.feed_forward.w1.weight": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "330",
+      "cpu",
+      3145728
+    ],
+    "offset": 0,
+    "shape": [
+      3072,
+      1024
+    ],
+    "stride": [
+      1024,
+      1
+    ]
+  },
+  "quantizer.pre_module.layers.6.feed_forward.w3.weight": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "331",
+      "cpu",
+      3145728
+    ],
+    "offset": 0,
+    "shape": [
+      3072,
+      1024
+    ],
+    "stride": [
+      1024,
+      1
+    ]
+  },
+  "quantizer.pre_module.layers.6.feed_forward.w2.weight": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "332",
+      "cpu",
+      3145728
+    ],
+    "offset": 0,
+    "shape": [
+      1024,
+      3072
+    ],
+    "stride": [
+      3072,
+      1
+    ]
+  },
+  "quantizer.pre_module.layers.6.ffn_norm.weight": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "333",
+      "cpu",
+      1024
+    ],
+    "offset": 0,
+    "shape": [
+      1024
+    ],
+    "stride": [
+      1
+    ]
+  },
+  "quantizer.pre_module.layers.6.attention_norm.weight": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "334",
+      "cpu",
+      1024
+    ],
+    "offset": 0,
+    "shape": [
+      1024
+    ],
+    "stride": [
+      1
+    ]
+  },
+  "quantizer.pre_module.layers.6.attention_layer_scale.gamma": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "335",
+      "cpu",
+      1024
+    ],
+    "offset": 0,
+    "shape": [
+      1024
+    ],
+    "stride": [
+      1
+    ]
+  },
+  "quantizer.pre_module.layers.6.ffn_layer_scale.gamma": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "336",
+      "cpu",
+      1024
+    ],
+    "offset": 0,
+    "shape": [
+      1024
+    ],
+    "stride": [
+      1
+    ]
+  },
+  "quantizer.pre_module.layers.7.attention.wqkv.weight": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "337",
+      "cpu",
+      3145728
+    ],
+    "offset": 0,
+    "shape": [
+      3072,
+      1024
+    ],
+    "stride": [
+      1024,
+      1
+    ]
+  },
+  "quantizer.pre_module.layers.7.attention.wo.weight": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "338",
+      "cpu",
+      1048576
+    ],
+    "offset": 0,
+    "shape": [
+      1024,
+      1024
+    ],
+    "stride": [
+      1024,
+      1
+    ]
+  },
+  "quantizer.pre_module.layers.7.feed_forward.w1.weight": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "339",
+      "cpu",
+      3145728
+    ],
+    "offset": 0,
+    "shape": [
+      3072,
+      1024
+    ],
+    "stride": [
+      1024,
+      1
+    ]
+  },
+  "quantizer.pre_module.layers.7.feed_forward.w3.weight": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "340",
+      "cpu",
+      3145728
+    ],
+    "offset": 0,
+    "shape": [
+      3072,
+      1024
+    ],
+    "stride": [
+      1024,
+      1
+    ]
+  },
+  "quantizer.pre_module.layers.7.feed_forward.w2.weight": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "341",
+      "cpu",
+      3145728
+    ],
+    "offset": 0,
+    "shape": [
+      1024,
+      3072
+    ],
+    "stride": [
+      3072,
+      1
+    ]
+  },
+  "quantizer.pre_module.layers.7.ffn_norm.weight": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "342",
+      "cpu",
+      1024
+    ],
+    "offset": 0,
+    "shape": [
+      1024
+    ],
+    "stride": [
+      1
+    ]
+  },
+  "quantizer.pre_module.layers.7.attention_norm.weight": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "343",
+      "cpu",
+      1024
+    ],
+    "offset": 0,
+    "shape": [
+      1024
+    ],
+    "stride": [
+      1
+    ]
+  },
+  "quantizer.pre_module.layers.7.attention_layer_scale.gamma": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "344",
+      "cpu",
+      1024
+    ],
+    "offset": 0,
+    "shape": [
+      1024
+    ],
+    "stride": [
+      1
+    ]
+  },
+  "quantizer.pre_module.layers.7.ffn_layer_scale.gamma": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "345",
+      "cpu",
+      1024
+    ],
+    "offset": 0,
+    "shape": [
+      1024
+    ],
+    "stride": [
+      1
+    ]
+  },
+  "quantizer.pre_module.norm.weight": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "346",
+      "cpu",
+      1024
+    ],
+    "offset": 0,
+    "shape": [
+      1024
+    ],
+    "stride": [
+      1
+    ]
+  },
+  "quantizer.post_module.freqs_cis": {
+    "storage": [
+      "storage",
+      "BFloat16Storage",
+      "347",
+      "cpu",
+      262144
+    ],
+    "offset": 0,
+    "shape": [
+      4096,
+      32,
+      2
+    ],
+    "stride": [
+      64,
+      2,
+      1
+    ]
+  },
+  "quantizer.post_module.causal_mask": {
+    "storage": [
+      "storage",
+      "BoolStorage",
+      "348",
+      "cpu",
+      16777216
+    ],
+    "offset": 0,
+    "shape": [
+      4096,
+      4096
+    ],
+    "stride": [
+      4096,
+      1
+    ]
+  },
+  "quantizer.post_module.layers.0.attention.wqkv.weight": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "349",
+      "cpu",
+      3145728
+    ],
+    "offset": 0,
+    "shape": [
+      3072,
+      1024
+    ],
+    "stride": [
+      1024,
+      1
+    ]
+  },
+  "quantizer.post_module.layers.0.attention.wo.weight": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "350",
+      "cpu",
+      1048576
+    ],
+    "offset": 0,
+    "shape": [
+      1024,
+      1024
+    ],
+    "stride": [
+      1024,
+      1
+    ]
+  },
+  "quantizer.post_module.layers.0.feed_forward.w1.weight": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "351",
+      "cpu",
+      3145728
+    ],
+    "offset": 0,
+    "shape": [
+      3072,
+      1024
+    ],
+    "stride": [
+      1024,
+      1
+    ]
+  },
+  "quantizer.post_module.layers.0.feed_forward.w3.weight": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "352",
+      "cpu",
+      3145728
+    ],
+    "offset": 0,
+    "shape": [
+      3072,
+      1024
+    ],
+    "stride": [
+      1024,
+      1
+    ]
+  },
+  "quantizer.post_module.layers.0.feed_forward.w2.weight": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "353",
+      "cpu",
+      3145728
+    ],
+    "offset": 0,
+    "shape": [
+      1024,
+      3072
+    ],
+    "stride": [
+      3072,
+      1
+    ]
+  },
+  "quantizer.post_module.layers.0.ffn_norm.weight": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "354",
+      "cpu",
+      1024
+    ],
+    "offset": 0,
+    "shape": [
+      1024
+    ],
+    "stride": [
+      1
+    ]
+  },
+  "quantizer.post_module.layers.0.attention_norm.weight": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "355",
+      "cpu",
+      1024
+    ],
+    "offset": 0,
+    "shape": [
+      1024
+    ],
+    "stride": [
+      1
+    ]
+  },
+  "quantizer.post_module.layers.0.attention_layer_scale.gamma": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "356",
+      "cpu",
+      1024
+    ],
+    "offset": 0,
+    "shape": [
+      1024
+    ],
+    "stride": [
+      1
+    ]
+  },
+  "quantizer.post_module.layers.0.ffn_layer_scale.gamma": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "357",
+      "cpu",
+      1024
+    ],
+    "offset": 0,
+    "shape": [
+      1024
+    ],
+    "stride": [
+      1
+    ]
+  },
+  "quantizer.post_module.layers.1.attention.wqkv.weight": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "358",
+      "cpu",
+      3145728
+    ],
+    "offset": 0,
+    "shape": [
+      3072,
+      1024
+    ],
+    "stride": [
+      1024,
+      1
+    ]
+  },
+  "quantizer.post_module.layers.1.attention.wo.weight": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "359",
+      "cpu",
+      1048576
+    ],
+    "offset": 0,
+    "shape": [
+      1024,
+      1024
+    ],
+    "stride": [
+      1024,
+      1
+    ]
+  },
+  "quantizer.post_module.layers.1.feed_forward.w1.weight": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "360",
+      "cpu",
+      3145728
+    ],
+    "offset": 0,
+    "shape": [
+      3072,
+      1024
+    ],
+    "stride": [
+      1024,
+      1
+    ]
+  },
+  "quantizer.post_module.layers.1.feed_forward.w3.weight": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "361",
+      "cpu",
+      3145728
+    ],
+    "offset": 0,
+    "shape": [
+      3072,
+      1024
+    ],
+    "stride": [
+      1024,
+      1
+    ]
+  },
+  "quantizer.post_module.layers.1.feed_forward.w2.weight": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "362",
+      "cpu",
+      3145728
+    ],
+    "offset": 0,
+    "shape": [
+      1024,
+      3072
+    ],
+    "stride": [
+      3072,
+      1
+    ]
+  },
+  "quantizer.post_module.layers.1.ffn_norm.weight": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "363",
+      "cpu",
+      1024
+    ],
+    "offset": 0,
+    "shape": [
+      1024
+    ],
+    "stride": [
+      1
+    ]
+  },
+  "quantizer.post_module.layers.1.attention_norm.weight": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "364",
+      "cpu",
+      1024
+    ],
+    "offset": 0,
+    "shape": [
+      1024
+    ],
+    "stride": [
+      1
+    ]
+  },
+  "quantizer.post_module.layers.1.attention_layer_scale.gamma": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "365",
+      "cpu",
+      1024
+    ],
+    "offset": 0,
+    "shape": [
+      1024
+    ],
+    "stride": [
+      1
+    ]
+  },
+  "quantizer.post_module.layers.1.ffn_layer_scale.gamma": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "366",
+      "cpu",
+      1024
+    ],
+    "offset": 0,
+    "shape": [
+      1024
+    ],
+    "stride": [
+      1
+    ]
+  },
+  "quantizer.post_module.layers.2.attention.wqkv.weight": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "367",
+      "cpu",
+      3145728
+    ],
+    "offset": 0,
+    "shape": [
+      3072,
+      1024
+    ],
+    "stride": [
+      1024,
+      1
+    ]
+  },
+  "quantizer.post_module.layers.2.attention.wo.weight": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "368",
+      "cpu",
+      1048576
+    ],
+    "offset": 0,
+    "shape": [
+      1024,
+      1024
+    ],
+    "stride": [
+      1024,
+      1
+    ]
+  },
+  "quantizer.post_module.layers.2.feed_forward.w1.weight": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "369",
+      "cpu",
+      3145728
+    ],
+    "offset": 0,
+    "shape": [
+      3072,
+      1024
+    ],
+    "stride": [
+      1024,
+      1
+    ]
+  },
+  "quantizer.post_module.layers.2.feed_forward.w3.weight": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "370",
+      "cpu",
+      3145728
+    ],
+    "offset": 0,
+    "shape": [
+      3072,
+      1024
+    ],
+    "stride": [
+      1024,
+      1
+    ]
+  },
+  "quantizer.post_module.layers.2.feed_forward.w2.weight": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "371",
+      "cpu",
+      3145728
+    ],
+    "offset": 0,
+    "shape": [
+      1024,
+      3072
+    ],
+    "stride": [
+      3072,
+      1
+    ]
+  },
+  "quantizer.post_module.layers.2.ffn_norm.weight": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "372",
+      "cpu",
+      1024
+    ],
+    "offset": 0,
+    "shape": [
+      1024
+    ],
+    "stride": [
+      1
+    ]
+  },
+  "quantizer.post_module.layers.2.attention_norm.weight": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "373",
+      "cpu",
+      1024
+    ],
+    "offset": 0,
+    "shape": [
+      1024
+    ],
+    "stride": [
+      1
+    ]
+  },
+  "quantizer.post_module.layers.2.attention_layer_scale.gamma": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "374",
+      "cpu",
+      1024
+    ],
+    "offset": 0,
+    "shape": [
+      1024
+    ],
+    "stride": [
+      1
+    ]
+  },
+  "quantizer.post_module.layers.2.ffn_layer_scale.gamma": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "375",
+      "cpu",
+      1024
+    ],
+    "offset": 0,
+    "shape": [
+      1024
+    ],
+    "stride": [
+      1
+    ]
+  },
+  "quantizer.post_module.layers.3.attention.wqkv.weight": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "376",
+      "cpu",
+      3145728
+    ],
+    "offset": 0,
+    "shape": [
+      3072,
+      1024
+    ],
+    "stride": [
+      1024,
+      1
+    ]
+  },
+  "quantizer.post_module.layers.3.attention.wo.weight": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "377",
+      "cpu",
+      1048576
+    ],
+    "offset": 0,
+    "shape": [
+      1024,
+      1024
+    ],
+    "stride": [
+      1024,
+      1
+    ]
+  },
+  "quantizer.post_module.layers.3.feed_forward.w1.weight": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "378",
+      "cpu",
+      3145728
+    ],
+    "offset": 0,
+    "shape": [
+      3072,
+      1024
+    ],
+    "stride": [
+      1024,
+      1
+    ]
+  },
+  "quantizer.post_module.layers.3.feed_forward.w3.weight": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "379",
+      "cpu",
+      3145728
+    ],
+    "offset": 0,
+    "shape": [
+      3072,
+      1024
+    ],
+    "stride": [
+      1024,
+      1
+    ]
+  },
+  "quantizer.post_module.layers.3.feed_forward.w2.weight": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "380",
+      "cpu",
+      3145728
+    ],
+    "offset": 0,
+    "shape": [
+      1024,
+      3072
+    ],
+    "stride": [
+      3072,
+      1
+    ]
+  },
+  "quantizer.post_module.layers.3.ffn_norm.weight": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "381",
+      "cpu",
+      1024
+    ],
+    "offset": 0,
+    "shape": [
+      1024
+    ],
+    "stride": [
+      1
+    ]
+  },
+  "quantizer.post_module.layers.3.attention_norm.weight": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "382",
+      "cpu",
+      1024
+    ],
+    "offset": 0,
+    "shape": [
+      1024
+    ],
+    "stride": [
+      1
+    ]
+  },
+  "quantizer.post_module.layers.3.attention_layer_scale.gamma": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "383",
+      "cpu",
+      1024
+    ],
+    "offset": 0,
+    "shape": [
+      1024
+    ],
+    "stride": [
+      1
+    ]
+  },
+  "quantizer.post_module.layers.3.ffn_layer_scale.gamma": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "384",
+      "cpu",
+      1024
+    ],
+    "offset": 0,
+    "shape": [
+      1024
+    ],
+    "stride": [
+      1
+    ]
+  },
+  "quantizer.post_module.layers.4.attention.wqkv.weight": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "385",
+      "cpu",
+      3145728
+    ],
+    "offset": 0,
+    "shape": [
+      3072,
+      1024
+    ],
+    "stride": [
+      1024,
+      1
+    ]
+  },
+  "quantizer.post_module.layers.4.attention.wo.weight": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "386",
+      "cpu",
+      1048576
+    ],
+    "offset": 0,
+    "shape": [
+      1024,
+      1024
+    ],
+    "stride": [
+      1024,
+      1
+    ]
+  },
+  "quantizer.post_module.layers.4.feed_forward.w1.weight": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "387",
+      "cpu",
+      3145728
+    ],
+    "offset": 0,
+    "shape": [
+      3072,
+      1024
+    ],
+    "stride": [
+      1024,
+      1
+    ]
+  },
+  "quantizer.post_module.layers.4.feed_forward.w3.weight": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "388",
+      "cpu",
+      3145728
+    ],
+    "offset": 0,
+    "shape": [
+      3072,
+      1024
+    ],
+    "stride": [
+      1024,
+      1
+    ]
+  },
+  "quantizer.post_module.layers.4.feed_forward.w2.weight": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "389",
+      "cpu",
+      3145728
+    ],
+    "offset": 0,
+    "shape": [
+      1024,
+      3072
+    ],
+    "stride": [
+      3072,
+      1
+    ]
+  },
+  "quantizer.post_module.layers.4.ffn_norm.weight": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "390",
+      "cpu",
+      1024
+    ],
+    "offset": 0,
+    "shape": [
+      1024
+    ],
+    "stride": [
+      1
+    ]
+  },
+  "quantizer.post_module.layers.4.attention_norm.weight": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "391",
+      "cpu",
+      1024
+    ],
+    "offset": 0,
+    "shape": [
+      1024
+    ],
+    "stride": [
+      1
+    ]
+  },
+  "quantizer.post_module.layers.4.attention_layer_scale.gamma": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "392",
+      "cpu",
+      1024
+    ],
+    "offset": 0,
+    "shape": [
+      1024
+    ],
+    "stride": [
+      1
+    ]
+  },
+  "quantizer.post_module.layers.4.ffn_layer_scale.gamma": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "393",
+      "cpu",
+      1024
+    ],
+    "offset": 0,
+    "shape": [
+      1024
+    ],
+    "stride": [
+      1
+    ]
+  },
+  "quantizer.post_module.layers.5.attention.wqkv.weight": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "394",
+      "cpu",
+      3145728
+    ],
+    "offset": 0,
+    "shape": [
+      3072,
+      1024
+    ],
+    "stride": [
+      1024,
+      1
+    ]
+  },
+  "quantizer.post_module.layers.5.attention.wo.weight": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "395",
+      "cpu",
+      1048576
+    ],
+    "offset": 0,
+    "shape": [
+      1024,
+      1024
+    ],
+    "stride": [
+      1024,
+      1
+    ]
+  },
+  "quantizer.post_module.layers.5.feed_forward.w1.weight": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "396",
+      "cpu",
+      3145728
+    ],
+    "offset": 0,
+    "shape": [
+      3072,
+      1024
+    ],
+    "stride": [
+      1024,
+      1
+    ]
+  },
+  "quantizer.post_module.layers.5.feed_forward.w3.weight": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "397",
+      "cpu",
+      3145728
+    ],
+    "offset": 0,
+    "shape": [
+      3072,
+      1024
+    ],
+    "stride": [
+      1024,
+      1
+    ]
+  },
+  "quantizer.post_module.layers.5.feed_forward.w2.weight": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "398",
+      "cpu",
+      3145728
+    ],
+    "offset": 0,
+    "shape": [
+      1024,
+      3072
+    ],
+    "stride": [
+      3072,
+      1
+    ]
+  },
+  "quantizer.post_module.layers.5.ffn_norm.weight": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "399",
+      "cpu",
+      1024
+    ],
+    "offset": 0,
+    "shape": [
+      1024
+    ],
+    "stride": [
+      1
+    ]
+  },
+  "quantizer.post_module.layers.5.attention_norm.weight": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "400",
+      "cpu",
+      1024
+    ],
+    "offset": 0,
+    "shape": [
+      1024
+    ],
+    "stride": [
+      1
+    ]
+  },
+  "quantizer.post_module.layers.5.attention_layer_scale.gamma": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "401",
+      "cpu",
+      1024
+    ],
+    "offset": 0,
+    "shape": [
+      1024
+    ],
+    "stride": [
+      1
+    ]
+  },
+  "quantizer.post_module.layers.5.ffn_layer_scale.gamma": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "402",
+      "cpu",
+      1024
+    ],
+    "offset": 0,
+    "shape": [
+      1024
+    ],
+    "stride": [
+      1
+    ]
+  },
+  "quantizer.post_module.layers.6.attention.wqkv.weight": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "403",
+      "cpu",
+      3145728
+    ],
+    "offset": 0,
+    "shape": [
+      3072,
+      1024
+    ],
+    "stride": [
+      1024,
+      1
+    ]
+  },
+  "quantizer.post_module.layers.6.attention.wo.weight": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "404",
+      "cpu",
+      1048576
+    ],
+    "offset": 0,
+    "shape": [
+      1024,
+      1024
+    ],
+    "stride": [
+      1024,
+      1
+    ]
+  },
+  "quantizer.post_module.layers.6.feed_forward.w1.weight": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "405",
+      "cpu",
+      3145728
+    ],
+    "offset": 0,
+    "shape": [
+      3072,
+      1024
+    ],
+    "stride": [
+      1024,
+      1
+    ]
+  },
+  "quantizer.post_module.layers.6.feed_forward.w3.weight": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "406",
+      "cpu",
+      3145728
+    ],
+    "offset": 0,
+    "shape": [
+      3072,
+      1024
+    ],
+    "stride": [
+      1024,
+      1
+    ]
+  },
+  "quantizer.post_module.layers.6.feed_forward.w2.weight": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "407",
+      "cpu",
+      3145728
+    ],
+    "offset": 0,
+    "shape": [
+      1024,
+      3072
+    ],
+    "stride": [
+      3072,
+      1
+    ]
+  },
+  "quantizer.post_module.layers.6.ffn_norm.weight": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "408",
+      "cpu",
+      1024
+    ],
+    "offset": 0,
+    "shape": [
+      1024
+    ],
+    "stride": [
+      1
+    ]
+  },
+  "quantizer.post_module.layers.6.attention_norm.weight": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "409",
+      "cpu",
+      1024
+    ],
+    "offset": 0,
+    "shape": [
+      1024
+    ],
+    "stride": [
+      1
+    ]
+  },
+  "quantizer.post_module.layers.6.attention_layer_scale.gamma": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "410",
+      "cpu",
+      1024
+    ],
+    "offset": 0,
+    "shape": [
+      1024
+    ],
+    "stride": [
+      1
+    ]
+  },
+  "quantizer.post_module.layers.6.ffn_layer_scale.gamma": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "411",
+      "cpu",
+      1024
+    ],
+    "offset": 0,
+    "shape": [
+      1024
+    ],
+    "stride": [
+      1
+    ]
+  },
+  "quantizer.post_module.layers.7.attention.wqkv.weight": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "412",
+      "cpu",
+      3145728
+    ],
+    "offset": 0,
+    "shape": [
+      3072,
+      1024
+    ],
+    "stride": [
+      1024,
+      1
+    ]
+  },
+  "quantizer.post_module.layers.7.attention.wo.weight": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "413",
+      "cpu",
+      1048576
+    ],
+    "offset": 0,
+    "shape": [
+      1024,
+      1024
+    ],
+    "stride": [
+      1024,
+      1
+    ]
+  },
+  "quantizer.post_module.layers.7.feed_forward.w1.weight": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "414",
+      "cpu",
+      3145728
+    ],
+    "offset": 0,
+    "shape": [
+      3072,
+      1024
+    ],
+    "stride": [
+      1024,
+      1
+    ]
+  },
+  "quantizer.post_module.layers.7.feed_forward.w3.weight": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "415",
+      "cpu",
+      3145728
+    ],
+    "offset": 0,
+    "shape": [
+      3072,
+      1024
+    ],
+    "stride": [
+      1024,
+      1
+    ]
+  },
+  "quantizer.post_module.layers.7.feed_forward.w2.weight": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "416",
+      "cpu",
+      3145728
+    ],
+    "offset": 0,
+    "shape": [
+      1024,
+      3072
+    ],
+    "stride": [
+      3072,
+      1
+    ]
+  },
+  "quantizer.post_module.layers.7.ffn_norm.weight": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "417",
+      "cpu",
+      1024
+    ],
+    "offset": 0,
+    "shape": [
+      1024
+    ],
+    "stride": [
+      1
+    ]
+  },
+  "quantizer.post_module.layers.7.attention_norm.weight": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "418",
+      "cpu",
+      1024
+    ],
+    "offset": 0,
+    "shape": [
+      1024
+    ],
+    "stride": [
+      1
+    ]
+  },
+  "quantizer.post_module.layers.7.attention_layer_scale.gamma": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "419",
+      "cpu",
+      1024
+    ],
+    "offset": 0,
+    "shape": [
+      1024
+    ],
+    "stride": [
+      1
+    ]
+  },
+  "quantizer.post_module.layers.7.ffn_layer_scale.gamma": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "420",
+      "cpu",
+      1024
+    ],
+    "offset": 0,
+    "shape": [
+      1024
+    ],
+    "stride": [
+      1
+    ]
+  },
+  "quantizer.post_module.norm.weight": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "421",
+      "cpu",
+      1024
+    ],
+    "offset": 0,
+    "shape": [
+      1024
+    ],
+    "stride": [
+      1
+    ]
+  },
+  "decoder.model.0.conv.bias": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "422",
+      "cpu",
+      1536
+    ],
+    "offset": 0,
+    "shape": [
+      1536
+    ],
+    "stride": [
+      1
+    ]
+  },
+  "decoder.model.0.conv.parametrizations.weight.original0": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "423",
+      "cpu",
+      1536
+    ],
+    "offset": 0,
+    "shape": [
+      1536,
+      1,
+      1
+    ],
+    "stride": [
+      1,
+      1,
+      1
+    ]
+  },
+  "decoder.model.0.conv.parametrizations.weight.original1": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "424",
+      "cpu",
+      11010048
+    ],
+    "offset": 0,
+    "shape": [
+      1536,
+      1024,
+      7
+    ],
+    "stride": [
+      7168,
+      7,
+      1
+    ]
+  },
+  "decoder.model.1.block.0.alpha": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "425",
+      "cpu",
+      1536
+    ],
+    "offset": 0,
+    "shape": [
+      1,
+      1536,
+      1
+    ],
+    "stride": [
+      1536,
+      1,
+      1
+    ]
+  },
+  "decoder.model.1.block.1.conv.bias": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "426",
+      "cpu",
+      768
+    ],
+    "offset": 0,
+    "shape": [
+      768
+    ],
+    "stride": [
+      1
+    ]
+  },
+  "decoder.model.1.block.1.conv.parametrizations.weight.original0": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "427",
+      "cpu",
+      1536
+    ],
+    "offset": 0,
+    "shape": [
+      1536,
+      1,
+      1
+    ],
+    "stride": [
+      1,
+      1,
+      1
+    ]
+  },
+  "decoder.model.1.block.1.conv.parametrizations.weight.original1": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "428",
+      "cpu",
+      18874368
+    ],
+    "offset": 0,
+    "shape": [
+      1536,
+      768,
+      16
+    ],
+    "stride": [
+      12288,
+      16,
+      1
+    ]
+  },
+  "decoder.model.1.block.2.block.0.alpha": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "429",
+      "cpu",
+      768
+    ],
+    "offset": 0,
+    "shape": [
+      1,
+      768,
+      1
+    ],
+    "stride": [
+      768,
+      1,
+      1
+    ]
+  },
+  "decoder.model.1.block.2.block.1.conv.bias": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "430",
+      "cpu",
+      768
+    ],
+    "offset": 0,
+    "shape": [
+      768
+    ],
+    "stride": [
+      1
+    ]
+  },
+  "decoder.model.1.block.2.block.1.conv.parametrizations.weight.original0": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "431",
+      "cpu",
+      768
+    ],
+    "offset": 0,
+    "shape": [
+      768,
+      1,
+      1
+    ],
+    "stride": [
+      1,
+      1,
+      1
+    ]
+  },
+  "decoder.model.1.block.2.block.1.conv.parametrizations.weight.original1": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "432",
+      "cpu",
+      4128768
+    ],
+    "offset": 0,
+    "shape": [
+      768,
+      768,
+      7
+    ],
+    "stride": [
+      5376,
+      7,
+      1
+    ]
+  },
+  "decoder.model.1.block.2.block.2.alpha": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "433",
+      "cpu",
+      768
+    ],
+    "offset": 0,
+    "shape": [
+      1,
+      768,
+      1
+    ],
+    "stride": [
+      768,
+      1,
+      1
+    ]
+  },
+  "decoder.model.1.block.2.block.3.conv.bias": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "434",
+      "cpu",
+      768
+    ],
+    "offset": 0,
+    "shape": [
+      768
+    ],
+    "stride": [
+      1
+    ]
+  },
+  "decoder.model.1.block.2.block.3.conv.parametrizations.weight.original0": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "435",
+      "cpu",
+      768
+    ],
+    "offset": 0,
+    "shape": [
+      768,
+      1,
+      1
+    ],
+    "stride": [
+      1,
+      1,
+      1
+    ]
+  },
+  "decoder.model.1.block.2.block.3.conv.parametrizations.weight.original1": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "436",
+      "cpu",
+      589824
+    ],
+    "offset": 0,
+    "shape": [
+      768,
+      768,
+      1
+    ],
+    "stride": [
+      768,
+      1,
+      1
+    ]
+  },
+  "decoder.model.1.block.3.block.0.alpha": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "437",
+      "cpu",
+      768
+    ],
+    "offset": 0,
+    "shape": [
+      1,
+      768,
+      1
+    ],
+    "stride": [
+      768,
+      1,
+      1
+    ]
+  },
+  "decoder.model.1.block.3.block.1.conv.bias": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "438",
+      "cpu",
+      768
+    ],
+    "offset": 0,
+    "shape": [
+      768
+    ],
+    "stride": [
+      1
+    ]
+  },
+  "decoder.model.1.block.3.block.1.conv.parametrizations.weight.original0": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "439",
+      "cpu",
+      768
+    ],
+    "offset": 0,
+    "shape": [
+      768,
+      1,
+      1
+    ],
+    "stride": [
+      1,
+      1,
+      1
+    ]
+  },
+  "decoder.model.1.block.3.block.1.conv.parametrizations.weight.original1": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "440",
+      "cpu",
+      4128768
+    ],
+    "offset": 0,
+    "shape": [
+      768,
+      768,
+      7
+    ],
+    "stride": [
+      5376,
+      7,
+      1
+    ]
+  },
+  "decoder.model.1.block.3.block.2.alpha": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "441",
+      "cpu",
+      768
+    ],
+    "offset": 0,
+    "shape": [
+      1,
+      768,
+      1
+    ],
+    "stride": [
+      768,
+      1,
+      1
+    ]
+  },
+  "decoder.model.1.block.3.block.3.conv.bias": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "442",
+      "cpu",
+      768
+    ],
+    "offset": 0,
+    "shape": [
+      768
+    ],
+    "stride": [
+      1
+    ]
+  },
+  "decoder.model.1.block.3.block.3.conv.parametrizations.weight.original0": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "443",
+      "cpu",
+      768
+    ],
+    "offset": 0,
+    "shape": [
+      768,
+      1,
+      1
+    ],
+    "stride": [
+      1,
+      1,
+      1
+    ]
+  },
+  "decoder.model.1.block.3.block.3.conv.parametrizations.weight.original1": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "444",
+      "cpu",
+      589824
+    ],
+    "offset": 0,
+    "shape": [
+      768,
+      768,
+      1
+    ],
+    "stride": [
+      768,
+      1,
+      1
+    ]
+  },
+  "decoder.model.1.block.4.block.0.alpha": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "445",
+      "cpu",
+      768
+    ],
+    "offset": 0,
+    "shape": [
+      1,
+      768,
+      1
+    ],
+    "stride": [
+      768,
+      1,
+      1
+    ]
+  },
+  "decoder.model.1.block.4.block.1.conv.bias": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "446",
+      "cpu",
+      768
+    ],
+    "offset": 0,
+    "shape": [
+      768
+    ],
+    "stride": [
+      1
+    ]
+  },
+  "decoder.model.1.block.4.block.1.conv.parametrizations.weight.original0": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "447",
+      "cpu",
+      768
+    ],
+    "offset": 0,
+    "shape": [
+      768,
+      1,
+      1
+    ],
+    "stride": [
+      1,
+      1,
+      1
+    ]
+  },
+  "decoder.model.1.block.4.block.1.conv.parametrizations.weight.original1": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "448",
+      "cpu",
+      4128768
+    ],
+    "offset": 0,
+    "shape": [
+      768,
+      768,
+      7
+    ],
+    "stride": [
+      5376,
+      7,
+      1
+    ]
+  },
+  "decoder.model.1.block.4.block.2.alpha": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "449",
+      "cpu",
+      768
+    ],
+    "offset": 0,
+    "shape": [
+      1,
+      768,
+      1
+    ],
+    "stride": [
+      768,
+      1,
+      1
+    ]
+  },
+  "decoder.model.1.block.4.block.3.conv.bias": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "450",
+      "cpu",
+      768
+    ],
+    "offset": 0,
+    "shape": [
+      768
+    ],
+    "stride": [
+      1
+    ]
+  },
+  "decoder.model.1.block.4.block.3.conv.parametrizations.weight.original0": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "451",
+      "cpu",
+      768
+    ],
+    "offset": 0,
+    "shape": [
+      768,
+      1,
+      1
+    ],
+    "stride": [
+      1,
+      1,
+      1
+    ]
+  },
+  "decoder.model.1.block.4.block.3.conv.parametrizations.weight.original1": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "452",
+      "cpu",
+      589824
+    ],
+    "offset": 0,
+    "shape": [
+      768,
+      768,
+      1
+    ],
+    "stride": [
+      768,
+      1,
+      1
+    ]
+  },
+  "decoder.model.2.block.0.alpha": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "453",
+      "cpu",
+      768
+    ],
+    "offset": 0,
+    "shape": [
+      1,
+      768,
+      1
+    ],
+    "stride": [
+      768,
+      1,
+      1
+    ]
+  },
+  "decoder.model.2.block.1.conv.bias": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "454",
+      "cpu",
+      384
+    ],
+    "offset": 0,
+    "shape": [
+      384
+    ],
+    "stride": [
+      1
+    ]
+  },
+  "decoder.model.2.block.1.conv.parametrizations.weight.original0": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "455",
+      "cpu",
+      768
+    ],
+    "offset": 0,
+    "shape": [
+      768,
+      1,
+      1
+    ],
+    "stride": [
+      1,
+      1,
+      1
+    ]
+  },
+  "decoder.model.2.block.1.conv.parametrizations.weight.original1": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "456",
+      "cpu",
+      4718592
+    ],
+    "offset": 0,
+    "shape": [
+      768,
+      384,
+      16
+    ],
+    "stride": [
+      6144,
+      16,
+      1
+    ]
+  },
+  "decoder.model.2.block.2.block.0.alpha": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "457",
+      "cpu",
+      384
+    ],
+    "offset": 0,
+    "shape": [
+      1,
+      384,
+      1
+    ],
+    "stride": [
+      384,
+      1,
+      1
+    ]
+  },
+  "decoder.model.2.block.2.block.1.conv.bias": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "458",
+      "cpu",
+      384
+    ],
+    "offset": 0,
+    "shape": [
+      384
+    ],
+    "stride": [
+      1
+    ]
+  },
+  "decoder.model.2.block.2.block.1.conv.parametrizations.weight.original0": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "459",
+      "cpu",
+      384
+    ],
+    "offset": 0,
+    "shape": [
+      384,
+      1,
+      1
+    ],
+    "stride": [
+      1,
+      1,
+      1
+    ]
+  },
+  "decoder.model.2.block.2.block.1.conv.parametrizations.weight.original1": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "460",
+      "cpu",
+      1032192
+    ],
+    "offset": 0,
+    "shape": [
+      384,
+      384,
+      7
+    ],
+    "stride": [
+      2688,
+      7,
+      1
+    ]
+  },
+  "decoder.model.2.block.2.block.2.alpha": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "461",
+      "cpu",
+      384
+    ],
+    "offset": 0,
+    "shape": [
+      1,
+      384,
+      1
+    ],
+    "stride": [
+      384,
+      1,
+      1
+    ]
+  },
+  "decoder.model.2.block.2.block.3.conv.bias": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "462",
+      "cpu",
+      384
+    ],
+    "offset": 0,
+    "shape": [
+      384
+    ],
+    "stride": [
+      1
+    ]
+  },
+  "decoder.model.2.block.2.block.3.conv.parametrizations.weight.original0": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "463",
+      "cpu",
+      384
+    ],
+    "offset": 0,
+    "shape": [
+      384,
+      1,
+      1
+    ],
+    "stride": [
+      1,
+      1,
+      1
+    ]
+  },
+  "decoder.model.2.block.2.block.3.conv.parametrizations.weight.original1": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "464",
+      "cpu",
+      147456
+    ],
+    "offset": 0,
+    "shape": [
+      384,
+      384,
+      1
+    ],
+    "stride": [
+      384,
+      1,
+      1
+    ]
+  },
+  "decoder.model.2.block.3.block.0.alpha": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "465",
+      "cpu",
+      384
+    ],
+    "offset": 0,
+    "shape": [
+      1,
+      384,
+      1
+    ],
+    "stride": [
+      384,
+      1,
+      1
+    ]
+  },
+  "decoder.model.2.block.3.block.1.conv.bias": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "466",
+      "cpu",
+      384
+    ],
+    "offset": 0,
+    "shape": [
+      384
+    ],
+    "stride": [
+      1
+    ]
+  },
+  "decoder.model.2.block.3.block.1.conv.parametrizations.weight.original0": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "467",
+      "cpu",
+      384
+    ],
+    "offset": 0,
+    "shape": [
+      384,
+      1,
+      1
+    ],
+    "stride": [
+      1,
+      1,
+      1
+    ]
+  },
+  "decoder.model.2.block.3.block.1.conv.parametrizations.weight.original1": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "468",
+      "cpu",
+      1032192
+    ],
+    "offset": 0,
+    "shape": [
+      384,
+      384,
+      7
+    ],
+    "stride": [
+      2688,
+      7,
+      1
+    ]
+  },
+  "decoder.model.2.block.3.block.2.alpha": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "469",
+      "cpu",
+      384
+    ],
+    "offset": 0,
+    "shape": [
+      1,
+      384,
+      1
+    ],
+    "stride": [
+      384,
+      1,
+      1
+    ]
+  },
+  "decoder.model.2.block.3.block.3.conv.bias": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "470",
+      "cpu",
+      384
+    ],
+    "offset": 0,
+    "shape": [
+      384
+    ],
+    "stride": [
+      1
+    ]
+  },
+  "decoder.model.2.block.3.block.3.conv.parametrizations.weight.original0": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "471",
+      "cpu",
+      384
+    ],
+    "offset": 0,
+    "shape": [
+      384,
+      1,
+      1
+    ],
+    "stride": [
+      1,
+      1,
+      1
+    ]
+  },
+  "decoder.model.2.block.3.block.3.conv.parametrizations.weight.original1": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "472",
+      "cpu",
+      147456
+    ],
+    "offset": 0,
+    "shape": [
+      384,
+      384,
+      1
+    ],
+    "stride": [
+      384,
+      1,
+      1
+    ]
+  },
+  "decoder.model.2.block.4.block.0.alpha": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "473",
+      "cpu",
+      384
+    ],
+    "offset": 0,
+    "shape": [
+      1,
+      384,
+      1
+    ],
+    "stride": [
+      384,
+      1,
+      1
+    ]
+  },
+  "decoder.model.2.block.4.block.1.conv.bias": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "474",
+      "cpu",
+      384
+    ],
+    "offset": 0,
+    "shape": [
+      384
+    ],
+    "stride": [
+      1
+    ]
+  },
+  "decoder.model.2.block.4.block.1.conv.parametrizations.weight.original0": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "475",
+      "cpu",
+      384
+    ],
+    "offset": 0,
+    "shape": [
+      384,
+      1,
+      1
+    ],
+    "stride": [
+      1,
+      1,
+      1
+    ]
+  },
+  "decoder.model.2.block.4.block.1.conv.parametrizations.weight.original1": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "476",
+      "cpu",
+      1032192
+    ],
+    "offset": 0,
+    "shape": [
+      384,
+      384,
+      7
+    ],
+    "stride": [
+      2688,
+      7,
+      1
+    ]
+  },
+  "decoder.model.2.block.4.block.2.alpha": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "477",
+      "cpu",
+      384
+    ],
+    "offset": 0,
+    "shape": [
+      1,
+      384,
+      1
+    ],
+    "stride": [
+      384,
+      1,
+      1
+    ]
+  },
+  "decoder.model.2.block.4.block.3.conv.bias": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "478",
+      "cpu",
+      384
+    ],
+    "offset": 0,
+    "shape": [
+      384
+    ],
+    "stride": [
+      1
+    ]
+  },
+  "decoder.model.2.block.4.block.3.conv.parametrizations.weight.original0": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "479",
+      "cpu",
+      384
+    ],
+    "offset": 0,
+    "shape": [
+      384,
+      1,
+      1
+    ],
+    "stride": [
+      1,
+      1,
+      1
+    ]
+  },
+  "decoder.model.2.block.4.block.3.conv.parametrizations.weight.original1": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "480",
+      "cpu",
+      147456
+    ],
+    "offset": 0,
+    "shape": [
+      384,
+      384,
+      1
+    ],
+    "stride": [
+      384,
+      1,
+      1
+    ]
+  },
+  "decoder.model.3.block.0.alpha": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "481",
+      "cpu",
+      384
+    ],
+    "offset": 0,
+    "shape": [
+      1,
+      384,
+      1
+    ],
+    "stride": [
+      384,
+      1,
+      1
+    ]
+  },
+  "decoder.model.3.block.1.conv.bias": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "482",
+      "cpu",
+      192
+    ],
+    "offset": 0,
+    "shape": [
+      192
+    ],
+    "stride": [
+      1
+    ]
+  },
+  "decoder.model.3.block.1.conv.parametrizations.weight.original0": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "483",
+      "cpu",
+      384
+    ],
+    "offset": 0,
+    "shape": [
+      384,
+      1,
+      1
+    ],
+    "stride": [
+      1,
+      1,
+      1
+    ]
+  },
+  "decoder.model.3.block.1.conv.parametrizations.weight.original1": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "484",
+      "cpu",
+      589824
+    ],
+    "offset": 0,
+    "shape": [
+      384,
+      192,
+      8
+    ],
+    "stride": [
+      1536,
+      8,
+      1
+    ]
+  },
+  "decoder.model.3.block.2.block.0.alpha": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "485",
+      "cpu",
+      192
+    ],
+    "offset": 0,
+    "shape": [
+      1,
+      192,
+      1
+    ],
+    "stride": [
+      192,
+      1,
+      1
+    ]
+  },
+  "decoder.model.3.block.2.block.1.conv.bias": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "486",
+      "cpu",
+      192
+    ],
+    "offset": 0,
+    "shape": [
+      192
+    ],
+    "stride": [
+      1
+    ]
+  },
+  "decoder.model.3.block.2.block.1.conv.parametrizations.weight.original0": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "487",
+      "cpu",
+      192
+    ],
+    "offset": 0,
+    "shape": [
+      192,
+      1,
+      1
+    ],
+    "stride": [
+      1,
+      1,
+      1
+    ]
+  },
+  "decoder.model.3.block.2.block.1.conv.parametrizations.weight.original1": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "488",
+      "cpu",
+      258048
+    ],
+    "offset": 0,
+    "shape": [
+      192,
+      192,
+      7
+    ],
+    "stride": [
+      1344,
+      7,
+      1
+    ]
+  },
+  "decoder.model.3.block.2.block.2.alpha": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "489",
+      "cpu",
+      192
+    ],
+    "offset": 0,
+    "shape": [
+      1,
+      192,
+      1
+    ],
+    "stride": [
+      192,
+      1,
+      1
+    ]
+  },
+  "decoder.model.3.block.2.block.3.conv.bias": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "490",
+      "cpu",
+      192
+    ],
+    "offset": 0,
+    "shape": [
+      192
+    ],
+    "stride": [
+      1
+    ]
+  },
+  "decoder.model.3.block.2.block.3.conv.parametrizations.weight.original0": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "491",
+      "cpu",
+      192
+    ],
+    "offset": 0,
+    "shape": [
+      192,
+      1,
+      1
+    ],
+    "stride": [
+      1,
+      1,
+      1
+    ]
+  },
+  "decoder.model.3.block.2.block.3.conv.parametrizations.weight.original1": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "492",
+      "cpu",
+      36864
+    ],
+    "offset": 0,
+    "shape": [
+      192,
+      192,
+      1
+    ],
+    "stride": [
+      192,
+      1,
+      1
+    ]
+  },
+  "decoder.model.3.block.3.block.0.alpha": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "493",
+      "cpu",
+      192
+    ],
+    "offset": 0,
+    "shape": [
+      1,
+      192,
+      1
+    ],
+    "stride": [
+      192,
+      1,
+      1
+    ]
+  },
+  "decoder.model.3.block.3.block.1.conv.bias": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "494",
+      "cpu",
+      192
+    ],
+    "offset": 0,
+    "shape": [
+      192
+    ],
+    "stride": [
+      1
+    ]
+  },
+  "decoder.model.3.block.3.block.1.conv.parametrizations.weight.original0": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "495",
+      "cpu",
+      192
+    ],
+    "offset": 0,
+    "shape": [
+      192,
+      1,
+      1
+    ],
+    "stride": [
+      1,
+      1,
+      1
+    ]
+  },
+  "decoder.model.3.block.3.block.1.conv.parametrizations.weight.original1": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "496",
+      "cpu",
+      258048
+    ],
+    "offset": 0,
+    "shape": [
+      192,
+      192,
+      7
+    ],
+    "stride": [
+      1344,
+      7,
+      1
+    ]
+  },
+  "decoder.model.3.block.3.block.2.alpha": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "497",
+      "cpu",
+      192
+    ],
+    "offset": 0,
+    "shape": [
+      1,
+      192,
+      1
+    ],
+    "stride": [
+      192,
+      1,
+      1
+    ]
+  },
+  "decoder.model.3.block.3.block.3.conv.bias": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "498",
+      "cpu",
+      192
+    ],
+    "offset": 0,
+    "shape": [
+      192
+    ],
+    "stride": [
+      1
+    ]
+  },
+  "decoder.model.3.block.3.block.3.conv.parametrizations.weight.original0": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "499",
+      "cpu",
+      192
+    ],
+    "offset": 0,
+    "shape": [
+      192,
+      1,
+      1
+    ],
+    "stride": [
+      1,
+      1,
+      1
+    ]
+  },
+  "decoder.model.3.block.3.block.3.conv.parametrizations.weight.original1": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "500",
+      "cpu",
+      36864
+    ],
+    "offset": 0,
+    "shape": [
+      192,
+      192,
+      1
+    ],
+    "stride": [
+      192,
+      1,
+      1
+    ]
+  },
+  "decoder.model.3.block.4.block.0.alpha": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "501",
+      "cpu",
+      192
+    ],
+    "offset": 0,
+    "shape": [
+      1,
+      192,
+      1
+    ],
+    "stride": [
+      192,
+      1,
+      1
+    ]
+  },
+  "decoder.model.3.block.4.block.1.conv.bias": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "502",
+      "cpu",
+      192
+    ],
+    "offset": 0,
+    "shape": [
+      192
+    ],
+    "stride": [
+      1
+    ]
+  },
+  "decoder.model.3.block.4.block.1.conv.parametrizations.weight.original0": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "503",
+      "cpu",
+      192
+    ],
+    "offset": 0,
+    "shape": [
+      192,
+      1,
+      1
+    ],
+    "stride": [
+      1,
+      1,
+      1
+    ]
+  },
+  "decoder.model.3.block.4.block.1.conv.parametrizations.weight.original1": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "504",
+      "cpu",
+      258048
+    ],
+    "offset": 0,
+    "shape": [
+      192,
+      192,
+      7
+    ],
+    "stride": [
+      1344,
+      7,
+      1
+    ]
+  },
+  "decoder.model.3.block.4.block.2.alpha": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "505",
+      "cpu",
+      192
+    ],
+    "offset": 0,
+    "shape": [
+      1,
+      192,
+      1
+    ],
+    "stride": [
+      192,
+      1,
+      1
+    ]
+  },
+  "decoder.model.3.block.4.block.3.conv.bias": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "506",
+      "cpu",
+      192
+    ],
+    "offset": 0,
+    "shape": [
+      192
+    ],
+    "stride": [
+      1
+    ]
+  },
+  "decoder.model.3.block.4.block.3.conv.parametrizations.weight.original0": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "507",
+      "cpu",
+      192
+    ],
+    "offset": 0,
+    "shape": [
+      192,
+      1,
+      1
+    ],
+    "stride": [
+      1,
+      1,
+      1
+    ]
+  },
+  "decoder.model.3.block.4.block.3.conv.parametrizations.weight.original1": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "508",
+      "cpu",
+      36864
+    ],
+    "offset": 0,
+    "shape": [
+      192,
+      192,
+      1
+    ],
+    "stride": [
+      192,
+      1,
+      1
+    ]
+  },
+  "decoder.model.4.block.0.alpha": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "509",
+      "cpu",
+      192
+    ],
+    "offset": 0,
+    "shape": [
+      1,
+      192,
+      1
+    ],
+    "stride": [
+      192,
+      1,
+      1
+    ]
+  },
+  "decoder.model.4.block.1.conv.bias": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "510",
+      "cpu",
+      96
+    ],
+    "offset": 0,
+    "shape": [
+      96
+    ],
+    "stride": [
+      1
+    ]
+  },
+  "decoder.model.4.block.1.conv.parametrizations.weight.original0": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "511",
+      "cpu",
+      192
+    ],
+    "offset": 0,
+    "shape": [
+      192,
+      1,
+      1
+    ],
+    "stride": [
+      1,
+      1,
+      1
+    ]
+  },
+  "decoder.model.4.block.1.conv.parametrizations.weight.original1": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "512",
+      "cpu",
+      73728
+    ],
+    "offset": 0,
+    "shape": [
+      192,
+      96,
+      4
+    ],
+    "stride": [
+      384,
+      4,
+      1
+    ]
+  },
+  "decoder.model.4.block.2.block.0.alpha": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "513",
+      "cpu",
+      96
+    ],
+    "offset": 0,
+    "shape": [
+      1,
+      96,
+      1
+    ],
+    "stride": [
+      96,
+      1,
+      1
+    ]
+  },
+  "decoder.model.4.block.2.block.1.conv.bias": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "514",
+      "cpu",
+      96
+    ],
+    "offset": 0,
+    "shape": [
+      96
+    ],
+    "stride": [
+      1
+    ]
+  },
+  "decoder.model.4.block.2.block.1.conv.parametrizations.weight.original0": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "515",
+      "cpu",
+      96
+    ],
+    "offset": 0,
+    "shape": [
+      96,
+      1,
+      1
+    ],
+    "stride": [
+      1,
+      1,
+      1
+    ]
+  },
+  "decoder.model.4.block.2.block.1.conv.parametrizations.weight.original1": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "516",
+      "cpu",
+      64512
+    ],
+    "offset": 0,
+    "shape": [
+      96,
+      96,
+      7
+    ],
+    "stride": [
+      672,
+      7,
+      1
+    ]
+  },
+  "decoder.model.4.block.2.block.2.alpha": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "517",
+      "cpu",
+      96
+    ],
+    "offset": 0,
+    "shape": [
+      1,
+      96,
+      1
+    ],
+    "stride": [
+      96,
+      1,
+      1
+    ]
+  },
+  "decoder.model.4.block.2.block.3.conv.bias": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "518",
+      "cpu",
+      96
+    ],
+    "offset": 0,
+    "shape": [
+      96
+    ],
+    "stride": [
+      1
+    ]
+  },
+  "decoder.model.4.block.2.block.3.conv.parametrizations.weight.original0": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "519",
+      "cpu",
+      96
+    ],
+    "offset": 0,
+    "shape": [
+      96,
+      1,
+      1
+    ],
+    "stride": [
+      1,
+      1,
+      1
+    ]
+  },
+  "decoder.model.4.block.2.block.3.conv.parametrizations.weight.original1": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "520",
+      "cpu",
+      9216
+    ],
+    "offset": 0,
+    "shape": [
+      96,
+      96,
+      1
+    ],
+    "stride": [
+      96,
+      1,
+      1
+    ]
+  },
+  "decoder.model.4.block.3.block.0.alpha": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "521",
+      "cpu",
+      96
+    ],
+    "offset": 0,
+    "shape": [
+      1,
+      96,
+      1
+    ],
+    "stride": [
+      96,
+      1,
+      1
+    ]
+  },
+  "decoder.model.4.block.3.block.1.conv.bias": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "522",
+      "cpu",
+      96
+    ],
+    "offset": 0,
+    "shape": [
+      96
+    ],
+    "stride": [
+      1
+    ]
+  },
+  "decoder.model.4.block.3.block.1.conv.parametrizations.weight.original0": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "523",
+      "cpu",
+      96
+    ],
+    "offset": 0,
+    "shape": [
+      96,
+      1,
+      1
+    ],
+    "stride": [
+      1,
+      1,
+      1
+    ]
+  },
+  "decoder.model.4.block.3.block.1.conv.parametrizations.weight.original1": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "524",
+      "cpu",
+      64512
+    ],
+    "offset": 0,
+    "shape": [
+      96,
+      96,
+      7
+    ],
+    "stride": [
+      672,
+      7,
+      1
+    ]
+  },
+  "decoder.model.4.block.3.block.2.alpha": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "525",
+      "cpu",
+      96
+    ],
+    "offset": 0,
+    "shape": [
+      1,
+      96,
+      1
+    ],
+    "stride": [
+      96,
+      1,
+      1
+    ]
+  },
+  "decoder.model.4.block.3.block.3.conv.bias": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "526",
+      "cpu",
+      96
+    ],
+    "offset": 0,
+    "shape": [
+      96
+    ],
+    "stride": [
+      1
+    ]
+  },
+  "decoder.model.4.block.3.block.3.conv.parametrizations.weight.original0": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "527",
+      "cpu",
+      96
+    ],
+    "offset": 0,
+    "shape": [
+      96,
+      1,
+      1
+    ],
+    "stride": [
+      1,
+      1,
+      1
+    ]
+  },
+  "decoder.model.4.block.3.block.3.conv.parametrizations.weight.original1": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "528",
+      "cpu",
+      9216
+    ],
+    "offset": 0,
+    "shape": [
+      96,
+      96,
+      1
+    ],
+    "stride": [
+      96,
+      1,
+      1
+    ]
+  },
+  "decoder.model.4.block.4.block.0.alpha": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "529",
+      "cpu",
+      96
+    ],
+    "offset": 0,
+    "shape": [
+      1,
+      96,
+      1
+    ],
+    "stride": [
+      96,
+      1,
+      1
+    ]
+  },
+  "decoder.model.4.block.4.block.1.conv.bias": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "530",
+      "cpu",
+      96
+    ],
+    "offset": 0,
+    "shape": [
+      96
+    ],
+    "stride": [
+      1
+    ]
+  },
+  "decoder.model.4.block.4.block.1.conv.parametrizations.weight.original0": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "531",
+      "cpu",
+      96
+    ],
+    "offset": 0,
+    "shape": [
+      96,
+      1,
+      1
+    ],
+    "stride": [
+      1,
+      1,
+      1
+    ]
+  },
+  "decoder.model.4.block.4.block.1.conv.parametrizations.weight.original1": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "532",
+      "cpu",
+      64512
+    ],
+    "offset": 0,
+    "shape": [
+      96,
+      96,
+      7
+    ],
+    "stride": [
+      672,
+      7,
+      1
+    ]
+  },
+  "decoder.model.4.block.4.block.2.alpha": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "533",
+      "cpu",
+      96
+    ],
+    "offset": 0,
+    "shape": [
+      1,
+      96,
+      1
+    ],
+    "stride": [
+      96,
+      1,
+      1
+    ]
+  },
+  "decoder.model.4.block.4.block.3.conv.bias": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "534",
+      "cpu",
+      96
+    ],
+    "offset": 0,
+    "shape": [
+      96
+    ],
+    "stride": [
+      1
+    ]
+  },
+  "decoder.model.4.block.4.block.3.conv.parametrizations.weight.original0": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "535",
+      "cpu",
+      96
+    ],
+    "offset": 0,
+    "shape": [
+      96,
+      1,
+      1
+    ],
+    "stride": [
+      1,
+      1,
+      1
+    ]
+  },
+  "decoder.model.4.block.4.block.3.conv.parametrizations.weight.original1": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "536",
+      "cpu",
+      9216
+    ],
+    "offset": 0,
+    "shape": [
+      96,
+      96,
+      1
+    ],
+    "stride": [
+      96,
+      1,
+      1
+    ]
+  },
+  "decoder.model.5.alpha": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "537",
+      "cpu",
+      96
+    ],
+    "offset": 0,
+    "shape": [
+      1,
+      96,
+      1
+    ],
+    "stride": [
+      96,
+      1,
+      1
+    ]
+  },
+  "decoder.model.6.conv.bias": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "538",
+      "cpu",
+      1
+    ],
+    "offset": 0,
+    "shape": [
+      1
+    ],
+    "stride": [
+      1
+    ]
+  },
+  "decoder.model.6.conv.parametrizations.weight.original0": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "539",
+      "cpu",
+      1
+    ],
+    "offset": 0,
+    "shape": [
+      1,
+      1,
+      1
+    ],
+    "stride": [
+      1,
+      1,
+      1
+    ]
+  },
+  "decoder.model.6.conv.parametrizations.weight.original1": {
+    "storage": [
+      "storage",
+      "FloatStorage",
+      "540",
+      "cpu",
+      672
+    ],
+    "offset": 0,
+    "shape": [
+      1,
+      96,
+      7
+    ],
+    "stride": [
+      672,
+      7,
+      1
+    ]
+  }
+}

@@ -1,0 +1,13 @@
+# Keep the already installed ROCm PyTorch. Never pull a CUDA torch wheel here.
+fastapi==0.143.3
+uvicorn==0.54.0
+loguru==0.7.3
+tqdm==4.70.1
+safetensors==0.8.0
+tokenizers==0.23.3
+soundfile==0.14.0
+huggingface-hub==2.2.0
+psutil==7.2.2
+numpy==2.5.4
+scipy==1.18.1
+python-multipart==0.0.32

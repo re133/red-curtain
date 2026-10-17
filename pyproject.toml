@@ -1,0 +1,9 @@
+[project]
+name = "red-curtain"
+version = "0.1.0"
+description = "Run Fish Audio Drama 3 on AMD GPUs with ROCm"
+requires-python = ">=3.11"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]

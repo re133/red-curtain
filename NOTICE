@@ -1,0 +1,69 @@
+Red Curtain
+Copyright (c) 2026 re133
+
+Built with Fish Audio.
+
+Red Curtain is an independent community project. It is not made, sponsored
+or endorsed by Fish Audio (39 AI, INC.).
+
+
+Fish Audio Materials
+====================
+
+These Fish Audio Materials are licensed under the Fish Audio Community
+License, Version 1.0. Copyright © 39 AI, INC. All Rights Reserved.
+
+The full license text is in red_curtain/fish_omni/LICENSE.
+
+Which files:
+  red_curtain/fish_omni/*.py      from fish_speech/models/text2semantic/fish_omni/
+  red_curtain/errors.py           from fish_speech (errors module)
+  red_curtain/sampling.py         from fish_speech (sampling defaults)
+  tests/fixtures/drama-3*.json    config.json of fishaudio/drama-3 and
+                                  fishaudio/drama-3-int4, used as test input
+
+Source: https://github.com/fishaudio/fish-speech
+Revision: 541566932abbaebcb0a40e562a1f846738383f38
+
+What was changed in the Fish Audio Materials:
+  - Import paths were changed from fish_speech.* to red_curtain.*.
+  - generate_drama3() in fish_omni/generate.py got a progress callback and a
+    cancel/safety callback that is checked between model steps.
+  - Nothing else in fish_omni/ was modified. The original CUDA / FP8 path is
+    still in the files but is not called on ROCm.
+
+New code that works with the Fish Audio Materials (in red_curtain/, MIT):
+  - adapter.py loads the checkpoint itself: dense weights go to the GPU in
+    BF16, the block-FP8 MoE experts stay compressed in system RAM.
+  - memory.py replaces the NVIDIA FP8 GEMM with FP8 block dequantization plus
+    a regular PyTorch matmul, and keeps recently used experts in a bounded
+    LRU cache on the GPU.
+  - residency.py moves the backbone and audio decoder to system RAM while the
+    DAC decodes, and back for the next generation.
+
+The Drama 3 model weights are NOT included in this repository. They are
+downloaded from https://huggingface.co/fishaudio/drama-3 and are licensed by
+Fish Audio under the Fish Audio Community License.
+
+Use restrictions (Section IV(b) of the Fish Audio Community License) apply to
+everyone who uses this software and its output. In short: do not imitate the
+voice of a real person without their consent, do not impersonate or deceive,
+no sexual content involving minors, do not remove watermarks, and do not use
+the output to train other speech or foundation models. Read the full license.
+
+
+vLLM-Omni DAC codec
+===================
+
+red_curtain/codec/ comes from vLLM-Omni
+(https://github.com/vllm-project/vllm-omni,
+revision e1d77a38a7d645283e660b6add4dfb2439732d15,
+vllm_omni/model_executor/models/fish_speech/dac_modules/).
+
+Licensed under the Apache License 2.0, see red_curtain/codec/LICENSE.
+Parts based on Descript Audio Codec are under the MIT license, see
+red_curtain/codec/DESCRIPT_LICENSE and the headers of the source files.
+
+Changes: import paths were changed. Deterministic RoPE and mask buffers are
+not loaded as weights but rebuilt by the loader with a bounded context. All
+other parameters are checked strictly.
